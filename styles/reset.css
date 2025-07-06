@@ -1,0 +1,22 @@
+/* 모든 태그들에 대한 공통 초기값 세팅 */
+html,body,h1,h2,h3,h4,h5,h6,
+dl,dt,dd,ol,ul,li,p,blockquote,hr,div,video,address,
+header,footer,nav,aside,article,section,figure,figcaption,main,details,summary,
+form,fieldset,legend,input,button,select,option,textarea,
+em,strong,sub,sup,br,span,del,s,q,mark,code,img,a,
+table,thead,tbody,tfoot,tr,td,th {
+    margin:0; padding:0; box-sizing:border-box;
+    line-height:1; letter-spacing:-0.02em; word-spacing:0;
+    font-size:1em; font-weight:400; font-style:normal;
+    color:#000;
+    font-family:'Pretendard',sans-serif;
+}
+/* 개별 태그 초기값 */
+a {text-decoration:none;}
+ul,ol,li {list-style:none;}
+fieldset {border:0;}
+legend {display:none;}
+input {border:0; outline:none;}
+button {border:0; background:none; cursor:pointer;}
+table,tr,td,th {border-collapse:collapse;}
+select, option {border:0; appearance:none;}
