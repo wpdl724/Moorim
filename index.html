@@ -3,25 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MOORIM | main</title>
+    <title>MOORIM | Main</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="./scripts/common.js" defer></script>
+    <script src="./scripts/index.js" defer></script>
 </head>
 <body>
-    <header><!-- 헤더 시작 -->
-
-    </header> 
-    <main>
-        <section><!-- 1행 : bnr_스와이퍼 시작-->
-            <div class="swiper_contaniner">
-                <div class="swiper_wrapper">
-                    <div class="swiper_slide slide1">slide1</div>
-                    <div class="swiper_slide slide2">slide2</div>
-                    <div class="swiper_slide slide3">slide3</div>
-                </div>
+    <div id="wrap">
+        <header>
+            <div class="header_wrap">
+                <nav>
+                    <div class="logo">
+                        <h1><a href="./index.html"><img src="./images/logo/moorim_logo_C.png" alt="무림 로고 화이트"></a></h1>
+                    </div>
+                    <ul class="gnb">
+                        <li><a href="#">기업 소개</a></li>
+                        <li><a href="#">제품 정보</a></li>
+                        <li><a href="#">투자 정보</a></li>
+                        <li><a href="#">지속가능경영</a></li>
+                        <li><a href="#">홍보센터</a></li>
+                        <li><a href="#">인재채용</a></li>
+                        <li><a href="#">고객문의</a></li>
+                    </ul>
+                    <div class="right_wrap">
+                        <a href="#" class="search"><img src="./images/icons/search_01.png" alt="검색하기"></a>
+                        <div class="lang_wrap">
+                            <button type="button" id="lang_btn"><img src="./images/icons/lang_black.png" alt="언어설정"></button>
+                            <div class="lang_select">
+                                <a href="#" class="kr">KOR</a>
+                                <a href="#" class="en">ENG</a>
+                                <img src="#" alt="언어변경 화살표">
+                            </div>
+                        </div>
+                    </div>
+                </nav>
             </div>
-        </section><!-- 1행 : bnr_스와이퍼 끝-->
-    </main>
-    <footer><!-- 푸터 시작 -->
-
-    </footer>
+        </header>
+    </div>
 </body>
 </html>
