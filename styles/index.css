@@ -1,3 +1,5 @@
+/* main */
+/* 1행 : bnr 시작 */
 main {}
 main section {}
 main section .wrap {}
@@ -7,3 +9,18 @@ main section .wrap #bnr .bnr .swiper-slide {}
 main section .wrap #bnr .bnr .slide1 {background-color: yellow;}
 main section .wrap #bnr .bnr .slide2 {background-color: yellowgreen;}
 main section .wrap #bnr .bnr .slide3 {background-color: aquamarine;}
+/* 1행 : bnr 끝 */
+
+/* 2행 : product 시작 */
+/* 2행 : product 끝 */
+
+
+/* 3행 : promotion 시작 */
+/* 3행 : promotion 끝 */
+
+
+/* 4행 */
+/* 5행 */
+/* 6행 */
+/* 7행 */
+
