@@ -46,7 +46,9 @@ body #wrap header .top_wrap nav .lnb_wrap .lnb  li{}
 body #wrap header .top_wrap nav .lnb_wrap .lnb li a{}
 
 /* right_wrap (오른쪽 메뉴 - 검색, 언어변경, 전체메뉴)*/
-body #wrap header .top_wrap nav .right_wrap{}
+body #wrap header .top_wrap nav .right_wrap{
+    display: flex;
+}
 
 /* right_menu (검색창) */
 body #wrap header .top_wrap nav .right_wrap .search{}
