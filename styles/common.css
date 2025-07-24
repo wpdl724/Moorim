@@ -1,6 +1,73 @@
 /* common.css : header, footer CSS*/
-/* header 시작 */
 
-/* header 끝 */
+/* ----------------- header 시작 */
+body{}
+body #wrap{/* 전체 큰묶음 */
+    padding: 0 180px;
+} 
+
+body #wrap header{
+    width: 100%; height: 100vh;
+    background-color: rgb(253, 253, 109);
+}
+body #wrap header .top_wrap{/* 헤더 큰 묶음 */
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+/* 로고 */
+body #wrap header .top_wrap h1{width: 150px; height: 60px;}
+body #wrap header .top_wrap h1 a{}
+body #wrap header .top_wrap h1 a img{
+    width: 100%;
+}
+
+/* nav */
+body #wrap header .top_wrap nav {
+    display: flex;
+}
+
+body #wrap header .top_wrap nav .gnb_wrap {/* gnb 큰묶음 */
+    background-color: skyblue;
+}
+body #wrap header .top_wrap nav .gnb_wrap .gnb{/* gnb - ul */
+    display: flex;
+    flex-flow: row;
+}
+
+body #wrap header .top_wrap nav .gnb_wrap .gnb li{}
+body #wrap header .top_wrap nav .gnb_wrap .gnb li a{}
+
+body #wrap header .top_wrap nav .lnb_wrap{/* lnb 큰묶음 */
+    display: none;
+}
+body #wrap header .top_wrap nav .lnb_wrap .lnb{ /* lnb - ul */}
+body #wrap header .top_wrap nav .lnb_wrap .lnb  li{}
+body #wrap header .top_wrap nav .lnb_wrap .lnb li a{}
+
+/* right_wrap (오른쪽 메뉴 - 검색, 언어변경, 전체메뉴)*/
+body #wrap header .top_wrap nav .right_wrap{}
+
+/* right_menu (검색창) */
+body #wrap header .top_wrap nav .right_wrap .search{}
+body #wrap header .top_wrap nav .right_wrap .search input{}
+body #wrap header .top_wrap nav .right_wrap .search button{}
+body #wrap header .top_wrap nav .right_wrap .search button img{}
+
+/* right_wrap (언어변경) */
+body #wrap header .top_wrap nav .right_wrap .lang_select{}
+body #wrap header .top_wrap nav .right_wrap .lang_select ul{}
+body #wrap header .top_wrap nav .right_wrap .lang_select ul li{}
+body #wrap header .top_wrap nav .right_wrap .lang_select ul li a{}
+body #wrap header .top_wrap nav .right_wrap .lang_select ul li a span{}
+body #wrap header .top_wrap nav .right_wrap .lang_select ul li a span img{}
+
+/* right_wrap (전체메뉴) */
+body #wrap header .top_wrap nav .right_wrap .all_menu_btn{}
+body #wrap header .top_wrap nav .right_wrap .all_menu_btn a{}
+body #wrap header .top_wrap nav .right_wrap .all_menu_btn a img{}
+/* ----------------- header 끝 */
+
+
 
 /* footer */
