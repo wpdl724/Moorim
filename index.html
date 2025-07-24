@@ -4,11 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moorim | main</title>
+    <!--플러그인 필수 css cdn 연결-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!--플러그인 필수 JS cdn 연결-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- 파일 연결 -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="./scripts/common.js" defer></script>
+    <script src="./scripts/index.js" defer></script>
 </head>
 <body>
     <div id="wrap"><!-- 전체 큰묶음 -->
-        <header>
-            <div class="top_wrap">
+        <header> <!-- 헤더 시작 -->
+            <div class="top_wrap"> <!-- 헤더 큰묶음 시작-->
                 <h1><a href="#"><img src="./images/logo/morrim_logo_black.png" alt="무림 화이트 로고"></a></h1><!-- 로고 -->
                 <nav>
                     <div class="gnb_wrap">
@@ -68,14 +80,72 @@
                             <input type="search" placeholder="">
                             <button type="submit"><img src="./images/icons/search_black.png" alt="검색어버튼"></button>
                         </div>
-                        <div class="lang_select"></div>
+                        <div class="lang_select">
+                            <ul class="language">
+                                <li><a href="#"><span>KOR</span><img src="./images/icons/arrow_down.png" alt="더보기 화살표"></a></li>
+                                <li><a href="#"><span>ENG</span><img src="./images/icons/arrow_down.png" alt="더보기 화살표"></a></li>
+                            </ul>
+                        </div>
+                        <div class="all_menu_btn">
+                            <a href="#"><img src="./images/icons/menu_black.png" alt="전체메뉴"></a>
+                        </div>
                     </div>
                 </nav>
-                <section><!-- 1행 : bnr 시작 -->
-                    <div class="bnr_wrap"></div>
-                </section><!-- 1행 : bnr 끝 -->
-            </div>
-        </header>
-    </div>
+            </div><!-- 헤더 큰묶음 끝 -->
+        </header><!-- 헤더 끝 -->
+        <main>
+        <section><!-- 1행 : bnr 시작 -->
+            <div class="wrap"><!-- 1행 큰 묶음 시작 -->
+                <div class="swiper" id="bnr"><!-- 1행 : bnr 슬라이드 시작 -->
+                    <!--필수-->
+                    <div class="swiper-wrapper bnr">
+                        <div class="swiper-slide slide1">
+                            <div class="bnr_wrap">
+                                <div class="bnr_txt">
+                                    <p>국내 최고의 펄프 · 제지 기술로</p>
+                                    <h1>생활에<br>가치를 더하다.</h1>
+                                    <p>펄프의 가능성</p>
+                                    <p>무림이 만드는 제지의 새로운 미래입니다.</p>
+                                </div>
+                                <div class="award_img"><img src="./images/main/bg/award_W.png" alt="브랜드 1위 이미지"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide2">
+                            <div class="bnr_wrap">
+                                <div class="bnr_txt">
+                                    <p>국내 최고의 펄프 · 제지 기술로</p>
+                                    <h1>생활에<br>가치를 더하다.</h1>
+                                    <p>펄프의 가능성</p>
+                                    <p>무림이 만드는 제지의 새로운 미래입니다.</p>
+                                </div>
+                                <div class="award_img"><img src="./images/main/bg/award_W.png" alt="브랜드 1위 이미지"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide3">
+                            <div class="bnr_wrap">
+                                <div class="bnr_txt">
+                                    <p>국내 최고의 펄프 · 제지 기술로</p>
+                                    <h2>생활에 가치를 더하다.</h2>
+                                    <p>더 나은 일상을 위해 무림이 찾은 해답</p>
+                                    <h1><img src="./images/main/bg/moohae.png" alt=""></h1>
+                                    <p>begin your green life</p>
+                                </div>
+                                <div class="award_img"><img src="./images/main/bg/award_W.png" alt="브랜드 1위 이미지"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--필요 시 사용(선택)-->
+                    <div class="swiper-pagination"></div>
+                </div><!-- 1행 : bnr 슬라이드 끝 -->
+            </div><!-- 1행 큰 묶음 끝-->
+        </section><!-- 1행 : bnr 끝 -->
+        <section><!-- 2행 : product 시작 -->
+            <div class="product_wrap"></div>
+        </section><!-- 2행 : product 끝 -->
+        <section><!-- 3행 : promotion 시작 -->
+            <div class="promotion_wrap"></div>
+        </section><!-- 3행 : promotion 끝 -->
+        </main>
+    </div><!-- 전체 큰묶음 끝 -->
 </body>
 </html>

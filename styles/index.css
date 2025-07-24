@@ -1,0 +1,9 @@
+main {}
+main section {}
+main section .wrap {}
+main section .wrap #bnr {}
+main section .wrap #bnr .bnr {}
+main section .wrap #bnr .bnr .swiper-slide {}
+main section .wrap #bnr .bnr .slide1 {background-color: yellow;}
+main section .wrap #bnr .bnr .slide2 {background-color: yellowgreen;}
+main section .wrap #bnr .bnr .slide3 {background-color: aquamarine;}
