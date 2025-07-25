@@ -3,16 +3,29 @@
 main {}
 main section {
 }
-main section .wrap {}
-main section .wrap #bnr {
+main section .wrap {/* 1행 큰묶음 */}
+main section .wrap #bnr { /* 1행 슬라이드 시작 */
     width: 100%; height: 936px;
-
 }
-main section .wrap #bnr .bnr {display: none;}
-main section .wrap #bnr .bnr .swiper-slide {}
-/* main section .wrap #bnr .bnr .slide1 {background-color: yellow;} */
-/* main section .wrap #bnr .bnr .slide2 {background-color: yellowgreen;} */
-/* main section .wrap #bnr .bnr .slide3 {background-color: aquamarine;} */
+main section .wrap #bnr .bnr {/* 1행 : bnr 슬라이드 큰묶음 */
+}
+main section .wrap #bnr .bnr .slide1 {background-color: yellow;} 
+main section .wrap #bnr .bnr .swiper-slide .bnr_wrap{}
+
+/* 1행 내용 */
+main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .bnr_txt{ /* 내용 */}
+main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .bnr_txt p {}
+main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .bnr_txt h1 {}
+
+/* award 인증 이미지 */
+main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .award_img{}
+main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .award_img img{}
+
+
+main section .wrap #bnr .bnr .slide2 {background-color: yellowgreen;}
+main section .wrap #bnr .bnr .slide3 {background-color: aquamarine;}
+
+
 /* 1행 : bnr 끝 */
 
 /* 2행 : product 시작 */
