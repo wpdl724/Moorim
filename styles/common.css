@@ -1,25 +1,26 @@
 /* common.css : header, footer CSS*/
 
 /* ----------------- header 시작 */
-body{}
+body{
+    
+}
 body #wrap{/* 전체 큰묶음 */
-    padding: 0 88px;
+    /* padding: 0 88px; */
     margin: 0 auto;
+    position: relative;
 } 
 
 body #wrap header{
-    width: 100%; 
+    width: 1920px; 
+    padding: 0 88px;
     background-color: rgb(253, 253, 109);
-    justify-items: flex;
-    justify-content: space-between;
 
 }
 body #wrap header .top_wrap{/* 헤더 큰 묶음 */
     display: flex;
-    flex-flow: row nowrap;
-    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
     height: 100px;
-    /* justify-content: space-between; */
 }
 
 /* 로고 */
@@ -29,45 +30,56 @@ body #wrap header .top_wrap h1{
 body #wrap header .top_wrap h1 a{
 }
 body #wrap header .top_wrap h1 a img{
-    width: 150px; height: 100px;
+    width: 100%; height: 99px;
 }
 
 /* nav */
 body #wrap header .top_wrap nav {
     display: flex;
-    margin: 0 auto;
     
+    flex-grow: 1;
+    /* margin: 0 auto; */
+    justify-content: space-between;
 }
 
 body #wrap header .top_wrap nav .gnb_wrap {/* gnb 큰묶음 */
     background-color: skyblue;
-    padding-top: 40px;
+    width: 830px;
+    margin: 0 auto;
+    
+    
 }
 body #wrap header .top_wrap nav .gnb_wrap .gnb{/* gnb - ul */
     display: flex;
     flex-flow: row;
-    width: 832px;
+    width: 100%;
     justify-content: space-between;
+    
 }
 
 body #wrap header .top_wrap nav .gnb_wrap .gnb li{
     background-color: rgb(117, 117, 211);
     font-size: 1em;
-    
-    
-
+    width: 100%;
+    text-align: center;
+    /* line-height: 100px */
 }
 body #wrap header .top_wrap nav .gnb_wrap .gnb li a{}
 
 body #wrap header .top_wrap nav .lnb_wrap{/* lnb 큰묶음 */
-    /* display: none; */
-    background-color: red;
+    background-color: orange;
     display: flex;
-    flex-flow: row nowrap;
+    position:absolute;
+    padding: 40px 200px;
+    top: 100px; left: 0; 
+    width: 100%; height: 630px;
 }
 body #wrap header .top_wrap nav .lnb_wrap .lnb{ /* lnb - ul */
+    width: 100%;
 }
-body #wrap header .top_wrap nav .lnb_wrap .lnb  li{}
+body #wrap header .top_wrap nav .lnb_wrap .lnb  li{
+    margin-bottom: 10px;
+}
 body #wrap header .top_wrap nav .lnb_wrap .lnb li a{}
 
 /* right_wrap (오른쪽 메뉴 - 검색, 언어변경, 전체메뉴)*/
@@ -75,6 +87,7 @@ body #wrap header .top_wrap nav .right_wrap{
     background-color: green;
     display: flex;
     flex-flow: row nowrap;
+    /* margin: 0 auto; */
 }
 
 /* right_menu (검색창) */
@@ -128,6 +141,7 @@ body #wrap header .top_wrap nav .right_wrap .lang_wrap #lang_btn option p{
 body #wrap header .top_wrap nav .right_wrap .all_menu_btn{
     background-color: aqua;
     margin-top: 40px;
+    margin-left: 20px;
 }
 body #wrap header .top_wrap nav .right_wrap .all_menu_btn a{}
 body #wrap header .top_wrap nav .right_wrap .all_menu_btn a img{
@@ -136,6 +150,21 @@ body #wrap header .top_wrap nav .right_wrap .all_menu_btn a img{
 }
 /* ----------------- header 끝 */
 
-
+/* --------------------------------------- input X표시 초기화 설정 */
+/* Chrome, Safari, Edge */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+/* Firefox */
+input[type="search"]::-moz-search-clear-button {
+    display: none;
+}
+/* Internet Explorer */
+input[type="search"]::-ms-clear {
+    display: none;
+}
 
 /* footer */

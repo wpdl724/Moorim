@@ -8,11 +8,11 @@ main section .wrap #bnr {
     width: 100%; height: 936px;
 
 }
-main section .wrap #bnr .bnr {}
+main section .wrap #bnr .bnr {display: none;}
 main section .wrap #bnr .bnr .swiper-slide {}
-main section .wrap #bnr .bnr .slide1 {background-color: yellow;}
-main section .wrap #bnr .bnr .slide2 {background-color: yellowgreen;}
-main section .wrap #bnr .bnr .slide3 {background-color: aquamarine;}
+/* main section .wrap #bnr .bnr .slide1 {background-color: yellow;} */
+/* main section .wrap #bnr .bnr .slide2 {background-color: yellowgreen;} */
+/* main section .wrap #bnr .bnr .slide3 {background-color: aquamarine;} */
 /* 1행 : bnr 끝 */
 
 /* 2행 : product 시작 */
