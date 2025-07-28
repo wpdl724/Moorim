@@ -67,7 +67,9 @@ body #wrap header .top_wrap nav .gnb_wrap .gnb li{
     text-align: center;
     line-height: 100px;
 }
-body #wrap header .top_wrap nav .gnb_wrap .gnb li a{}
+body #wrap header .top_wrap nav .gnb_wrap .gnb li a{
+    color: #fff;
+}
 
 body #wrap header .top_wrap nav .lnb_wrap{/* lnb 큰묶음 */
     background-color: orange;
@@ -107,12 +109,12 @@ body #wrap header .top_wrap nav .right_wrap .search{
 }
 body #wrap header .top_wrap nav .right_wrap .search input{
     background-color: transparent;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #fff;
     width: 165px; 
     margin-top: 10px;
 }
 body #wrap header .top_wrap nav .right_wrap .search button{
-    background-color: pink;
+    /* background-color: pink; */
     margin-right: 20px;
     position: absolute;
     margin-left: -20px;
@@ -149,8 +151,8 @@ body #wrap header .top_wrap nav .right_wrap .lang_wrap #lang_btn option p{
 
 /* right_wrap (전체메뉴) */
 body #wrap header .top_wrap nav .right_wrap .all_menu_btn{
-    background-color: aqua;
-    margin-top: 40px;
+    /* background-color: aqua; */
+    margin-top: 45px;
     margin-left: 20px;
 }
 body #wrap header .top_wrap nav .right_wrap .all_menu_btn a{}
