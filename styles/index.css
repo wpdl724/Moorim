@@ -11,7 +11,6 @@ main section .wrap #bnr .bnr {/* 1행 : bnr 슬라이드 큰묶음 */
 
 }
 main section .wrap #bnr .bnr .slide1 {
-    /* padding: 0 88px; */
     background-image: url(../images/main/bg/figma_bg_01.png);
 } 
 main section .wrap #bnr .bnr .swiper-slide .bnr_wrap{
@@ -24,6 +23,8 @@ main section .wrap #bnr .bnr .swiper-slide .bnr_wrap{
 
 /* 1행 내용 */
 main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .bnr_txt{ /* 내용 */
+    /* align-items: center; */
+    padding-top: 100px;
 }
 main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .bnr_txt p {
     font-size: 1.25em;
@@ -41,7 +42,8 @@ main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .bnr_txt h1 {
 }
 
 /* award 인증 이미지 */
-main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .award_img{}
+main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .award_img{    padding-top: 100px;
+}
 main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .award_img img{}
 
 
@@ -60,13 +62,41 @@ main section .product_wrap{
     width: 100%;
     height: 600px;
     background-color: palevioletred;
+    padding: 74px 88px;
+    
 }
+
 main section .product_wrap .contents{
+    text-align: center;
+    padding-bottom: 80px;
+}
+main section .product_wrap .contents h1{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 2.125em;
+    font-weight: 500;
+}
+main section .product_wrap .contents p{}
+
+main section .product_wrap .contents .product_img{/* 제품 이미지 큰 묶음 */
+    width: 100%;
+    background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+}
+main section .product_wrap .contents .product_img a {
+    
+}
+main section .product_wrap .contents .product_img a img {
+    border-radius: 50px;
+}
+main section .product_wrap .contents .product_img a span {/* 이미지 위 글자 */
+    font-size: 1.25em;
+    font-weight: 500;
+    
 
 }
-main section .product_wrap h1{}
-main section .product_wrap p{}
-main section .product_wrap{}
+
 /* 2행 : product 끝 */
 
 
@@ -76,8 +106,9 @@ main section .product_wrap{}
 
 /* 4행 : ir 시작*/
 main section .ir_wrap{/* 4행 큰묶음 */
+    width: 1920px; height: 1220px;
     background-color: yellow;
-    
+    padding: 0 88px;
 }
 main section .ir_wrap .contents{/* 타이틀 묶음 */
     padding: 146px 88px;
@@ -94,15 +125,36 @@ main section .ir_wrap .contents p{
 }
 
 /* ir 그리드 형식 */
-main section .ir_wrap .ir_gird_wrap{
+main section .ir_wrap .ir_gird_wrap {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(250px, auto);
+    grid-template-columns: repeat(3, 588px);
+    grid-auto-rows: 360px; /* 기본 높이는 가로형 기준 */
     gap: 20px;
     margin-top: 40px;
+    justify-content: center; /* 가운데 정렬 */
 }
 
+main section .ir_wrap .ir_gird_wrap .item1 {
+background-color: aquamarine;
+}
 
+main section .ir_wrap .ir_gird_wrap .item2 {
+background-color: rebeccapurple;
+}
+
+main section .ir_wrap .ir_gird_wrap .item3 {
+background-color: pink;
+grid-row: span 2; /* 세로로 두 줄 사용 */
+height: 740px;     /* 세로형 높이 고정 */
+}
+
+main section .ir_wrap .ir_gird_wrap .item4 {
+background-color: lightgray;
+}
+
+main section .ir_wrap .ir_gird_wrap .item5 {
+background-color: lightsalmon;
+}
 /* 4행 : ir 끝*/
 /* 5행 */
 /* 6행 */

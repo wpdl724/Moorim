@@ -29,29 +29,29 @@ const allMenuBtn = document.querySelector('.all_menu_btn');
 console.log(gnbItems,lnbWrap,allMenuBtn);
 
 
-  // ✅ 공통 함수: LNB 열기
-  function openLnbWrap() {
-    lnbWrap.classList.add('active');
-  }
+//   // 공통 함수: LNB 열기
+//   function openLnbWrap() {
+//     lnbWrap.classList.add('active');
+//   }
 
-  // ✅ GNB 클릭 시 LNB 열기
-  gnbItems.forEach(item => {
-    item.addEventListener('click', (e) => {
-      e.stopPropagation(); // 버블링 방지
-      openLnbWrap();
-    });
-  });
+//   // GNB 클릭 시 LNB 열기
+//   gnbItems.forEach(item => {
+//     item.addEventListener('click', (e) => {
+//       e.stopPropagation(); // 버블링 방지
+//       openLnbWrap();
+//     });
+//   });
 
-  // ✅ 전체메뉴 버튼 클릭 시 LNB 열기
-  allMenuBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    openLnbWrap();
-  });
+//   // 전체메뉴 버튼 클릭 시 LNB 열기
+//   allMenuBtn.addEventListener('click', (e) => {
+//     e.preventDefault();
+//     e.stopPropagation();
+//     openLnbWrap();
+//   });
 
-  // ✅ 바깥 클릭 시 LNB 닫기
-  document.addEventListener('click', (e) => {
-    if (!lnbWrap.contains(e.target) && !allMenuBtn.contains(e.target)) {
-      lnbWrap.classList.remove('active');
-    }
-  });
+//   // 바깥 클릭 시 LNB 닫기
+//   document.addEventListener('click', (e) => {
+//     if (!lnbWrap.contains(e.target) && !allMenuBtn.contains(e.target)) {
+//       lnbWrap.classList.remove('active');
+//     }
+//   });

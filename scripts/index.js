@@ -1,6 +1,6 @@
 /* 무림 메인페이지 JS */
 var mySwiper = new Swiper('.swiper', { 
     slideperview:1,
-    autoplay: {delay:3000,},
+    autoplay: {delay:6000,},
     loop: true,
 })
