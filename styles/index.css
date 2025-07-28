@@ -33,6 +33,10 @@ main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .bnr_txt p {
 
 main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .bnr_txt h1 {
     font-size: 2em;
+    color: #fff;
+    margin-bottom: 10px;
+    line-height: 1.4;
+
 
 }
 
@@ -52,6 +56,17 @@ main section .wrap #bnr .bnr .slide3 {
 /* 1행 : bnr 끝 */
 
 /* 2행 : product 시작 */
+main section .product_wrap{
+    width: 100%;
+    height: 600px;
+    background-color: palevioletred;
+}
+main section .product_wrap .contents{
+
+}
+main section .product_wrap h1{}
+main section .product_wrap p{}
+main section .product_wrap{}
 /* 2행 : product 끝 */
 
 
@@ -59,7 +74,36 @@ main section .wrap #bnr .bnr .slide3 {
 /* 3행 : promotion 끝 */
 
 
-/* 4행 */
+/* 4행 : ir 시작*/
+main section .ir_wrap{/* 4행 큰묶음 */
+    background-color: yellow;
+    
+}
+main section .ir_wrap .contents{/* 타이틀 묶음 */
+    padding: 146px 88px;
+}
+main section .ir_wrap .contents h1{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 2.125em;
+    font-weight: 500;
+}
+main section .ir_wrap .contents p{
+    text-align: center;
+
+}
+
+/* ir 그리드 형식 */
+main section .ir_wrap .ir_gird_wrap{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(250px, auto);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+
+/* 4행 : ir 끝*/
 /* 5행 */
 /* 6행 */
 /* 7행 */

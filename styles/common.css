@@ -112,6 +112,7 @@ body #wrap header .top_wrap nav .right_wrap .search input{
     border-bottom: 1px solid #fff;
     width: 165px; 
     margin-top: 10px;
+    color: #fff;
 }
 body #wrap header .top_wrap nav .right_wrap .search button{
     /* background-color: pink; */
