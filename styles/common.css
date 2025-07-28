@@ -11,9 +11,14 @@ body #wrap{/* 전체 큰묶음 */
 } 
 
 body #wrap header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
     width: 1920px; 
     padding: 0 88px;
-    background-color: rgb(253, 253, 109);
+    /* background-color: rgb(253, 253, 109); */
+    background-color: transparent;
 
 }
 body #wrap header .top_wrap{/* 헤더 큰 묶음 */
@@ -25,7 +30,7 @@ body #wrap header .top_wrap{/* 헤더 큰 묶음 */
 
 /* 로고 */
 body #wrap header .top_wrap h1{
-    background-color: coral;    
+    /* background-color: coral;     */
 }
 body #wrap header .top_wrap h1 a{
 }
@@ -41,7 +46,7 @@ body #wrap header .top_wrap nav {
 }
 
 body #wrap header .top_wrap nav .gnb_wrap {/* gnb 큰묶음 */
-    background-color: skyblue;
+    /* background-color: skyblue; */
     width: 830px;
     margin: 0 auto;
     
@@ -56,7 +61,7 @@ body #wrap header .top_wrap nav .gnb_wrap .gnb{/* gnb - ul */
 }
 
 body #wrap header .top_wrap nav .gnb_wrap .gnb li{
-    background-color: rgb(117, 117, 211);
+    /* background-color: rgb(117, 117, 211); */
     font-size: 1em;
     width: 100%;
     text-align: center;
@@ -66,12 +71,19 @@ body #wrap header .top_wrap nav .gnb_wrap .gnb li a{}
 
 body #wrap header .top_wrap nav .lnb_wrap{/* lnb 큰묶음 */
     background-color: orange;
-    display: flex;
+    display: none;
     position:absolute;
+    z-index: 9999; /* 위로 올라오게하기 */
     padding: 40px 200px;
     top: 100px; left: 0; 
     width: 100%; height: 630px;
 }
+
+.gnb_wrap:hover .lnb_wrap {
+    display: flex;
+}
+
+
 body #wrap header .top_wrap nav .lnb_wrap .lnb{ /* lnb - ul */
     width: 100%;
 }
@@ -82,7 +94,7 @@ body #wrap header .top_wrap nav .lnb_wrap .lnb li a{}
 
 /* right_wrap (오른쪽 메뉴 - 검색, 언어변경, 전체메뉴)*/
 body #wrap header .top_wrap nav .right_wrap{
-    background-color: green;
+    /* background-color: green; */
     display: flex;
     flex-flow: row nowrap;
 }
@@ -112,7 +124,7 @@ body #wrap header .top_wrap nav .right_wrap .search button img{
 
 /* right_wrap (언어변경) */
 body #wrap header .top_wrap nav .right_wrap .lang_wrap{
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     margin: 0 auto;
     margin-top: 40px;
 
@@ -122,6 +134,7 @@ body #wrap header .top_wrap nav .right_wrap .lang_wrap #lang_btn{
     width: 74px; height: 30px;
     border: 1px solid #fff;
     border-radius: 10px;
+    color: #fff;
 
 }
 
@@ -163,5 +176,8 @@ input[type="search"]::-moz-search-clear-button {
 input[type="search"]::-ms-clear {
     display: none;
 }
-
+/* ------------------------------ select 요소 포커스 시 테두리 제거 */
+select:focus {
+    outline: none;
+}
 /* footer */

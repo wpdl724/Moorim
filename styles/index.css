@@ -8,22 +8,45 @@ main section .wrap #bnr { /* 1행 슬라이드 시작 */
     width: 100%; height: 936px;
 }
 main section .wrap #bnr .bnr {/* 1행 : bnr 슬라이드 큰묶음 */
+
 }
-main section .wrap #bnr .bnr .slide1 {background-color: yellow;} 
-main section .wrap #bnr .bnr .swiper-slide .bnr_wrap{}
+main section .wrap #bnr .bnr .slide1 {
+    /* padding: 0 88px; */
+    background-image: url(../images/main/bg/figma_bg_01.png);
+} 
+main section .wrap #bnr .bnr .swiper-slide .bnr_wrap{
+    padding: 255px 214px;
+    display: flex; 
+    flex-flow: row nowrap;
+    margin: 0 auto;
+    justify-content: space-between;
+}
 
 /* 1행 내용 */
-main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .bnr_txt{ /* 내용 */}
-main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .bnr_txt p {}
-main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .bnr_txt h1 {}
+main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .bnr_txt{ /* 내용 */
+}
+main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .bnr_txt p {
+    font-size: 1.25em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .bnr_txt h1 {
+    font-size: 2em;
+
+}
 
 /* award 인증 이미지 */
 main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .award_img{}
 main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .award_img img{}
 
 
-main section .wrap #bnr .bnr .slide2 {background-color: yellowgreen;}
-main section .wrap #bnr .bnr .slide3 {background-color: aquamarine;}
+main section .wrap #bnr .bnr .slide2 {
+    background-image: url(../images/main/bg/figma_bg_02.png);
+}
+main section .wrap #bnr .bnr .slide3 {
+    background-image: url(../images/main/bg/figma_bg_03.png)
+}
 
 
 /* 1행 : bnr 끝 */
