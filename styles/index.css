@@ -1,4 +1,5 @@
 /* main */
+body{}
 /* 1행 : bnr 시작 */
 main {}
 main section {
@@ -42,7 +43,8 @@ main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .bnr_txt h1 {
 }
 
 /* award 인증 이미지 */
-main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .award_img{    padding-top: 100px;
+main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .award_img{    
+    padding-top: 100px;
 }
 main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .award_img img{}
 
@@ -63,7 +65,6 @@ main section .product_wrap{
     height: 600px;
     background-color: palevioletred;
     padding: 74px 88px;
-    
 }
 
 main section .product_wrap .contents{
@@ -71,12 +72,14 @@ main section .product_wrap .contents{
 }
 main section .product_wrap .contents h1{
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     font-size: 2.125em;
     font-weight: 500;
 }
 main section .product_wrap .contents p{
     margin-bottom: 80px;
+    font-size: 1.25em;
+
 }
 
 main section .product_wrap .contents .product_img{/* 제품 이미지 큰 묶음 */
@@ -100,6 +103,54 @@ main section .product_wrap .contents .product_img a span {/* 이미지 위 글�
 
 
 /* 3행 : promotion 시작 */
+main section .promotion_wrap{/* 3행 큰묶음 */
+    background-color:#f5f5f5;
+    padding: 160px 88px;
+    display: flex; 
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    
+}
+main section .promotion_wrap .contents_wrap{ /* 3행 내용, a태그 묶음 */
+    margin-right: 100px;
+}
+main section .promotion_wrap .contents_wrap .contents{/* 타이틀 묶음 */
+    margin: left;
+
+}
+main section .promotion_wrap .contents_wrap .contents h1{
+    margin-bottom: 20px;
+    font-size: 2.125em;
+    font-weight: 500;
+}
+main section .promotion_wrap .contents_wrap .contents p{
+    margin-bottom: 10px;
+    font-size: 1.125em;
+
+}
+main section .promotion_wrap .contents_wrap .contents .promotion_btn{
+    margin-top: 60px;
+    width: 200px; height: 48px;
+    background-color: #000;
+    border-radius: 15px;
+}
+main section .promotion_wrap .contents_wrap .contents .promotion_btn a{
+}
+main section .promotion_wrap .contents_wrap .contents .promotion_btn a p{
+    /* background-color: rebeccapurple; */
+    font-size: 1.25em;
+    line-height: 48px;
+    margin-left: 34px;
+    color: #fff;
+}
+
+main section .promotion_wrap .promotion_video{/* 유투브 영상 주소코드 */
+
+}
+main section .promotion_wrap .promotion_video a iframe { /* 유투브 영상 */
+    /* width: 820px; height: 440px; */
+    width: 924px; height: 512px;
+}
 /* 3행 : promotion 끝 */
 
 
@@ -115,12 +166,14 @@ main section .ir_wrap .contents{/* 타이틀 묶음 */
 }
 main section .ir_wrap .contents h1{
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     font-size: 2.125em;
     font-weight: 500;
 }
 main section .ir_wrap .contents p{
     text-align: center;
+    font-size: 1.25em;
+
 }
 
 /* ir 그리드 형식 */
