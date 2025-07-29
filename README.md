@@ -34,3 +34,5 @@
 * `(box-shadow: offset-x offset-y blur-radius spread-radius color;)`: 2행 제품명 글자(펄프, 종이, 신소재) / 4행 그리드 내용 
 ## Moorim line-height 
 * `140% (1.4)` 
+
+## 디자인 
