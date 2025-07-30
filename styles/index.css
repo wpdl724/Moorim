@@ -56,7 +56,35 @@ main section .wrap #bnr .bnr .slide3 {
     background-image: url(../images/main/bg/figma_bg_03.png)
 }
 
+/* 1행 애니메이션  */
 
+
+/* 1행 페이지네이션 모양 변경 */
+/* 페이지네이션 위치 */
+.swiper-pagination {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+/* 기본 모양 : 작고 둥근 흰색 원 */
+.swiper-pagination-bullet {
+display: inline-block;
+width: 8px;
+height: 8px;
+margin: 0 6px;
+border-radius: 50%;
+background-color: rgba(255, 255, 255, 0.5);
+transition: all 0.3s ease;
+}
+
+/* 활성화된것: 길쭉하고 불투명한 타원 */
+.swiper-pagination-bullet-active {
+width: 24px;
+height: 8px;
+border-radius: 20px;
+background-color: white;
+opacity: 1;
+}
 /* 1행 : bnr 끝 */
 
 /* 2행 : product 시작 */
@@ -150,6 +178,7 @@ main section .promotion_wrap .promotion_video{/* 유투브 영상 주소코드 *
 main section .promotion_wrap .promotion_video a iframe { /* 유투브 영상 */
     /* width: 820px; height: 440px; */
     width: 924px; height: 512px;
+    border-radius: 10px;
 }
 /* 3행 : promotion 끝 */
 
@@ -285,4 +314,5 @@ main section .ir_wrap .ir_gird_wrap .item5 ul li a p{
 /* 5행 */
 /* 6행 */
 /* 7행 */
+
 
