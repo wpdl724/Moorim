@@ -29,10 +29,13 @@
 7. `20px (1.25em;) - Medium (500)` : 2행 제품명 글자 (펄프, 종이, 신소재) 
 8. `20px (1.25em;) - Regular (400)` : 3행 btn 내용
 9. `24px (1.5em;) - Medium (500)` : 4행 (그리드) 내용
-10. 
+
 ## 글자 그림자(box-shadow) 설정
 * `(box-shadow: offset-x offset-y blur-radius spread-radius color;)`: 2행 제품명 글자(펄프, 종이, 신소재) / 4행 그리드 내용 
 ## Moorim line-height 
 * `140% (1.4)` 
 
-## 디자인 
+## 반응형 디자인
+* 데스크탑 : 1250-1920
+* 태블릿 : 1249-850
+* 모바일 : 849-320 
