@@ -1,9 +1,7 @@
 /* common.css : header, footer CSS*/
 
 /* ----------------- header 시작 */
-body{
-    
-}
+body{}
 body #wrap{/* 전체 큰묶음 */
     /* padding: 0 88px; */
     margin: 0 auto;
