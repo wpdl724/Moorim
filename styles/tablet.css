@@ -1,5 +1,50 @@
-/* tablet.css -* 태블릿 : 1249-850 */
-/* ================= HEADER CSS 수정 ================= */
+/* tablet.css -* 태블릿 : 1200-850 */
+/*============================================== header 태블릿 반응형 */
+
+body,html {}
+
+#wrap{}
+#wrap header{}
+#wrap header .top_wrap{ /* 헤더 큰묶음 */
+
+}
+
+#wrap header .top_wrap h1 {/* 헤더 -  로고 */}
+#wrap header .top_wrap h1 a {}
+#wrap header .top_wrap h1 a img{}
+
+
+#wrap header .top_wrap nav {}
+#wrap header .top_wrap nav .gnb_wrap{/* gnb 큰묶음 */}
+#wrap header .top_wrap nav .gnb_wrap .gnb{}
+#wrap header .top_wrap nav .gnb_wrap .gnb li{}
+#wrap header .top_wrap nav .gnb_wrap .gnb li a{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* GNB, LNB 공통 부모 구조 정렬 */

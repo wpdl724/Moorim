@@ -2,24 +2,24 @@
 
 /* ----------------- header 시작 */
 body{}
-body #wrap{/* 전체 큰묶음 */
+#wrap{/* 전체 큰묶음 */
     /* padding: 0 88px; */
     margin: 0 auto;
     position: relative;
 } 
 
-body #wrap header{
+#wrap header{
     /* background-color: rgb(253, 253, 109); */
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1000;
-    width: 1920px; 
+    width: 100%; 
     padding: 0 88px;
     background-color: transparent;
 
 }
-body #wrap header .top_wrap{/* 헤더 큰 묶음 */
+#wrap header .top_wrap{/* 헤더 큰 묶음 */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,30 +27,30 @@ body #wrap header .top_wrap{/* 헤더 큰 묶음 */
 }
 
 /* 로고 */
-body #wrap header .top_wrap h1{
+#wrap header .top_wrap h1{
     /* background-color: coral;     */
 }
-body #wrap header .top_wrap h1 a{
+#wrap header .top_wrap h1 a{
 }
-body #wrap header .top_wrap h1 a img{
+#wrap header .top_wrap h1 a img{
     width: 150px;
 }
 
 /* nav */
-body #wrap header .top_wrap nav {
+#wrap header .top_wrap nav {
     display: flex;
     flex-grow: 1;
     justify-content: space-between;
 }
 
-body #wrap header .top_wrap nav .gnb_wrap {/* gnb 큰묶음 */
+#wrap header .top_wrap nav .gnb_wrap {/* gnb 큰묶음 */
     /* background-color: skyblue; */
     width: 830px;
     margin: 0 auto;
     
     
 }
-body #wrap header .top_wrap nav .gnb_wrap .gnb{/* gnb - ul */
+#wrap header .top_wrap nav .gnb_wrap .gnb{/* gnb - ul */
     display: flex;
     flex-flow: row;
     width: 100%;
@@ -58,18 +58,18 @@ body #wrap header .top_wrap nav .gnb_wrap .gnb{/* gnb - ul */
     
 }
 
-body #wrap header .top_wrap nav .gnb_wrap .gnb li{
+#wrap header .top_wrap nav .gnb_wrap .gnb li{
     /* background-color: rgb(117, 117, 211); */
     font-size: 1em;
     width: 100%;
     text-align: center;
     line-height: 100px;
 }
-body #wrap header .top_wrap nav .gnb_wrap .gnb li a{
+#wrap header .top_wrap nav .gnb_wrap .gnb li a{
     color: #fff;
 }
 
-body #wrap header .top_wrap nav .lnb_wrap{/* lnb 큰묶음 */
+#wrap header .top_wrap nav .lnb_wrap{/* lnb 큰묶음 */
     background-color: orange;
     display: none;
     position:absolute;
@@ -84,28 +84,28 @@ body #wrap header .top_wrap nav .lnb_wrap{/* lnb 큰묶음 */
 }
 
 
-body #wrap header .top_wrap nav .lnb_wrap .lnb{ /* lnb - ul */
+#wrap header .top_wrap nav .lnb_wrap .lnb{ /* lnb - ul */
     width: 100%;
 }
-body #wrap header .top_wrap nav .lnb_wrap .lnb  li{
+#wrap header .top_wrap nav .lnb_wrap .lnb  li{
     margin-bottom: 10px;
 }
-body #wrap header .top_wrap nav .lnb_wrap .lnb li a{}
+#wrap header .top_wrap nav .lnb_wrap .lnb li a{}
 
 /* right_wrap (오른쪽 메뉴 - 검색, 언어변경, 전체메뉴)*/
-body #wrap header .top_wrap nav .right_wrap{
+#wrap header .top_wrap nav .right_wrap{
     /* background-color: green; */
     display: flex;
     flex-flow: row nowrap;
 }
 
 /* right_menu (검색창) */
-body #wrap header .top_wrap nav .right_wrap .search{
+#wrap header .top_wrap nav .right_wrap .search{
     position: relative;
     padding-top: 40px;
     margin-right: 20px;
 }
-body #wrap header .top_wrap nav .right_wrap .search input{
+#wrap header .top_wrap nav .right_wrap .search input{
     background-color: transparent;
     border-bottom: 1px solid #fff;
     width: 165px; 
@@ -114,25 +114,25 @@ body #wrap header .top_wrap nav .right_wrap .search input{
     margin-left: 20px;
     margin-right: 20px;
 }
-body #wrap header .top_wrap nav .right_wrap .search button{
+#wrap header .top_wrap nav .right_wrap .search button{
     /* background-color: pink; */
     margin-right: 20px;
     position: absolute;
     margin-left: -20px;
     margin-top: 4px;
 }
-body #wrap header .top_wrap nav .right_wrap .search button img{
+#wrap header .top_wrap nav .right_wrap .search button img{
     width: 20px; height: 20px;
 }
 
 /* right_wrap (언어변경) */
-body #wrap header .top_wrap nav .right_wrap .lang_wrap{
+#wrap header .top_wrap nav .right_wrap .lang_wrap{
     /* background-color: blueviolet; */
     margin: 0 auto;
     margin-top: 40px;
 
 }
-body #wrap header .top_wrap nav .right_wrap .lang_wrap #lang_btn{
+#wrap header .top_wrap nav .right_wrap .lang_wrap #lang_btn{
     background-color: transparent;
     width: 74px; height: 30px;
     border: 1px solid #fff;
@@ -141,23 +141,23 @@ body #wrap header .top_wrap nav .right_wrap .lang_wrap #lang_btn{
 
 }
 
-body #wrap header .top_wrap nav .right_wrap .lang_wrap #lang_btn option{
+#wrap header .top_wrap nav .right_wrap .lang_wrap #lang_btn option{
     text-align: center;
 }
-body #wrap header .top_wrap nav .right_wrap .lang_wrap #lang_btn option p{
+#wrap header .top_wrap nav .right_wrap .lang_wrap #lang_btn option p{
     font-size: 0.875em;
     font-weight: 900;
     color: #fff;
 }
 
 /* right_wrap (전체메뉴) */
-body #wrap header .top_wrap nav .right_wrap .all_menu_btn{
+#wrap header .top_wrap nav .right_wrap .all_menu_btn{
     /* background-color: aqua; */
     margin-top: 45px;
     margin-left: 20px;
 }
-body #wrap header .top_wrap nav .right_wrap .all_menu_btn a{}
-body #wrap header .top_wrap nav .right_wrap .all_menu_btn a img{
+#wrap header .top_wrap nav .right_wrap .all_menu_btn a{}
+#wrap header .top_wrap nav .right_wrap .all_menu_btn a img{
     width: 20px; height: 20px;
 
 }
