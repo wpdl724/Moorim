@@ -2,23 +2,23 @@
 /* ================= HEADER CSS 수정 ================= */
 
 /* GNB, LNB 공통 부모 구조 정렬 */
-.top_wrap {
+/* .top_wrap {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     position: relative;
-  }
+  } */
   
   /* GNB nav */
-  nav {
+  /* nav {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     position: relative;
-  }
+  } */
   
   /* GNB ul */
-  nav .gnb_wrap {
+  /* nav .gnb_wrap {
     background: skyblue;
     padding-top: 40px;
   }
@@ -31,12 +31,12 @@
   nav .gnb_wrap .gnb li a {
     font-weight: bold;
     font-size: 16px;
-  }
+  } */
   
   /* LNB 전체 래퍼 */
-  nav .lnb_wrap {
+  /* nav .lnb_wrap {
     position: absolute;
-    top: 100%; /* gnb 아래로 */
+    top: 100%; gnb 아래로
     left: 0;
     width: 100%;
     background-color: #fff200;
@@ -45,9 +45,9 @@
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     z-index: 100;
   }
-  
+   */
   /* LNB ul 리스트들 */
-  nav .lnb_wrap .lnb {
+  /* nav .lnb_wrap .lnb {
     display: none;
     flex-direction: column;
     min-width: 160px;
@@ -59,18 +59,18 @@
   nav .lnb_wrap .lnb li:first-child a {
     font-weight: bold;
   }
-  
+   */
   /* 오른쪽 메뉴 */
-  .right_wrap {
+  /* .right_wrap {
     display: flex;
     gap: 12px;
     align-items: center;
     background: green;
     padding-top: 40px;
-  }
+  } */
   
   /* ================= JS로 제어할 클래스 ================= */
-  .lnb_wrap.active {
+  /* .lnb_wrap.active {
     display: flex !important;
     justify-content: flex-start;
   }
@@ -78,4 +78,4 @@
   .lnb_wrap .lnb.active {
     display: flex !important;
   }
-  
+   */

@@ -9,13 +9,13 @@ body #wrap{/* 전체 큰묶음 */
 } 
 
 body #wrap header{
+    /* background-color: rgb(253, 253, 109); */
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1000;
     width: 1920px; 
     padding: 0 88px;
-    /* background-color: rgb(253, 253, 109); */
     background-color: transparent;
 
 }
