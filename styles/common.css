@@ -224,12 +224,11 @@ footer .footer_bottom .footer_group a img{
 
 footer .footer_bottom .footer_group address{/* 주소 */
 }
-footer .footer_bottom .footer_group address .address_wrap{ /* 주소, 연락처 묶음 */
-    background-color: yellow;
+footer .footer_bottom .footer_group address .address_wrap .address { /* 주소, 연락처 묶음 */
+    background-color: yellow;    
     /* position: relative; */
 }
-footer .footer_bottom .footer_group address .address_wrap {/* 주소 */}
-footer .footer_bottom .footer_group address .address_wrap .address a span {
+footer .footer_bottom .footer_group address .address_wrap .address a span {/* 개인정보 */
     background-color: brown;
     margin-top: 10px;
     margin-right: 10px;
@@ -242,6 +241,7 @@ footer .footer_bottom .footer_group address .address_wrap .contact {/* 연락처
 footer .footer_bottom .footer_group address .address_wrap .contact a span{
     margin-right: 15px;
     background-color: beige;
+    
 }
 
 footer .footer_bottom .footer_group address .address_wrap .contact .family_site{ /* 패밀리 사이트 */
@@ -255,7 +255,7 @@ footer .footer_bottom .footer_group address .address_wrap .contact .family_site 
     display: flex;
     flex-flow: column;
     line-height: 30px;
-
+    margin-right: 580px;
 
 }
 

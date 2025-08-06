@@ -35,7 +35,6 @@ main section .wrap #bnr .bnr .swiper-slide .bnr_wrap{
 
 /* 1행 내용 */
 main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .bnr_txt{ /* 내용 */
-    /* align-items: center; */
     padding-top: 100px;
 }
 main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .bnr_txt p {
@@ -43,13 +42,20 @@ main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .bnr_txt p {
     margin-bottom: 10px;
     color: #fff;
 }
-
+main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .bnr_txt p:nth-child(5){
+    /* color: red;
+    background-color: tan; */
+}
+main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .bnr_txt h1 img{
+    /* background-color: yellow; */
+}
 main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .bnr_txt h1 {
     font-size: 2em;
     color: #fff;
     margin-bottom: 10px;
     line-height: 1.4;
 }
+
 /* -------------------- 1행 슬라이드 텍스트 애니메이션 효과 ==================== S */
 /* award 인증 이미지 */
 main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .award_img{padding-top: 100px;}
@@ -95,7 +101,10 @@ main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .award_img img{}
     animation: fadeUp 1s ease forwards;
     animation-delay: 0.8s;
 }
-
+.swiper-slide-active .bnr_txt p:nth-of-type(4) {
+    animation: fadeUp 1s ease forwards;
+    animation-delay: 1s;
+}
 /* award 이미지 등장 애니메이션 */
 .swiper-slide-active .award_img img {
     animation: fadeUp 1s ease forwards;
@@ -104,12 +113,8 @@ main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .award_img img{}
 /* -------------------- 1행 : bnr 애니메이션 효과 설정 ==================== E */
 
 
-main section .wrap #bnr .bnr .slide2 {
-    background-image: url(../images/main/bg/figma_bg_02.png);
-}
-main section .wrap #bnr .bnr .slide3 {
-    background-image: url(../images/main/bg/figma_bg_03.png)
-}
+main section .wrap #bnr .bnr .slide2 {background-image: url(../images/main/bg/figma_bg_02.png);}
+main section .wrap #bnr .bnr .slide3 {background-image: url(../images/main/bg/figma_bg_03.png);}
 
 /* -------------------- 1행 페이지네이션 모양 변경 */
 /* 페이지네이션 위치 */
@@ -120,22 +125,22 @@ main section .wrap #bnr .bnr .slide3 {
 
 /* 기본 모양 : 작고 둥근 흰색 원 */
 .swiper-pagination-bullet {
-display: inline-block;
-width: 8px;
-height: 8px;
-margin: 0 6px;
-border-radius: 50%;
-background-color: rgba(255, 255, 255, 0.5);
-transition: all 0.3s ease;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 0 6px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: all 0.3s ease;
 }
 
-/* 활성화된것: 길쭉하고 불투명한 타원 */
+/* 페이지네이션 활성화된것: 길쭉하고 불투명한 타원 */
 .swiper-pagination-bullet-active {
-width: 24px;
-height: 8px;
-border-radius: 20px;
-background-color: white;
-opacity: 1;
+    width: 24px;
+    height: 8px;
+    border-radius: 20px;
+    background-color: white;
+    opacity: 1;
 }
 /* ======================================================  1행 : bnr 끝 */
 
@@ -178,7 +183,6 @@ main section .product_wrap .contents .product_img a span {/* 이미지 위 글�
     font-size: 1.25em;
     font-weight: 500;
 }
-
 /* ======================================================  2행 : product 끝 */
 
 /* ======================================================  3행 : promotion 시작 */
@@ -213,8 +217,14 @@ main section .promotion_wrap .contents_wrap .contents .promotion_btn{
     background-color: #000;
     border-radius: 15px;
 }
+
+main section .promotion_wrap .contents_wrap .contents .promotion_btn:hover { /* 3행 유튜브 버튼 효과 */
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
 main section .promotion_wrap .contents_wrap .contents .promotion_btn a{
 }
+
 main section .promotion_wrap .contents_wrap .contents .promotion_btn a p{
     /* background-color: rebeccapurple; */
     font-size: 1.25em;
@@ -223,9 +233,7 @@ main section .promotion_wrap .contents_wrap .contents .promotion_btn a p{
     color: #fff;
 }
 
-main section .promotion_wrap .promotion_video{/* 유투브 영상 주소코드 */
-
-}
+main section .promotion_wrap .promotion_video{/* 유투브 영상 주소코드 */}
 main section .promotion_wrap .promotion_video a iframe { /* 유투브 영상 */
     /* width: 820px; height: 440px; */
     width: 924px; height: 512px;
@@ -282,6 +290,8 @@ main section .ir_wrap .ir_gird_wrap .item1 ul li a p{
     bottom: 300px;
     color: #fff;
 }
+
+
 
 /* --------------------------------------------------------------- 2번째 그리드*/
 main section .ir_wrap .ir_gird_wrap .item2 {

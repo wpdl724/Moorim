@@ -39,3 +39,12 @@
 * 데스크탑 : 1250-1920
 * 태블릿 : 1249-850
 * 모바일 : 849-320 
+
+* a태그 이동 링크 막기
+`document.querySelectorAll('a').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+    if (this.getAttribute('href') === '#' || this.getAttribute('href') === '') {
+            e.preventDefault();
+        }
+    });
+});`
