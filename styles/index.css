@@ -20,6 +20,7 @@ main section .wrap #bnr { /* 1행 슬라이드 시작 */
     
 }
 main section .wrap #bnr .bnr {/* 1행 : bnr 슬라이드 큰묶음 */
+    
 }
 main section .wrap #bnr .bnr .slide1 {
     background-image: url(../images/main/bg/figma_bg_01.png);
@@ -155,13 +156,14 @@ main section .product_wrap{
 main section .product_wrap .contents{
     text-align: center;
 }
-main section .product_wrap .contents h1{
+main section .product_wrap .contents h1{ /* 대제목 타이틀 */
     text-align: center;
     margin-bottom: 20px;
     font-size: 2.125em;
     font-weight: 500;
+    
 }
-main section .product_wrap .contents p{
+main section .product_wrap .contents p{/* 타이틀 내용 */
     margin-bottom: 80px;
     font-size: 1.25em;
 
@@ -174,14 +176,18 @@ main section .product_wrap .contents .product_img{/* 제품 이미지 큰 묶음
     justify-content: space-between;
 }
 main section .product_wrap .contents .product_img a {
-    
 }
 main section .product_wrap .contents .product_img a img {
     border-radius: 50px;
+    position: relative;
 }
 main section .product_wrap .contents .product_img a span {/* 이미지 위 글자 */
     font-size: 1.25em;
     font-weight: 500;
+    position: absolute;
+    /* bottom: 20px; */
+    display: flex; 
+
 }
 /* ======================================================  2행 : product 끝 */
 

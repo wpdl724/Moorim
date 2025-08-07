@@ -1,4 +1,5 @@
 /* common.css : header, footer CSS*/
+
 /* ----------------- header 시작 */
 body{}
 #wrap{/* 전체 큰묶음 */
@@ -19,6 +20,7 @@ body{}
 
 }
 #wrap header .top_wrap{/* 헤더 큰 묶음 */
+    background-color: salmon;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -68,28 +70,61 @@ body{}
     color: #fff;
 }
 
+/* lnb */
 #wrap header .top_wrap nav .lnb_wrap{/* lnb 큰묶음 */
     background-color: orange;
     display: none;
+    /* display: flex; */
+    flex-flow: row nowrap;
     position:absolute;
     z-index: 9999; /* 위로 올라오게하기 */
     padding: 40px 200px;
     top: 100px; left: 0; 
-    width: 100%; height: 630px;
-}
-
-.gnb_wrap:hover .lnb_wrap {
-    display: flex;
+    width: 100%;
+    /* width:calc(100%); height: 640px; */
 }
 
 
 #wrap header .top_wrap nav .lnb_wrap .lnb{ /* lnb - ul */
     width: 100%;
+    background-color: lightblue;
+    /* margin: 0 auto; */
+    text-align: center;
 }
-#wrap header .top_wrap nav .lnb_wrap .lnb  li{
-    margin-bottom: 10px;
+#wrap header .top_wrap nav .lnb_wrap .lnb li{
+    /* background-color: lightgrey; */
+    /* margin-bottom: 10px; */
+    padding: 20px;
 }
-#wrap header .top_wrap nav .lnb_wrap .lnb li a{}
+#wrap header .top_wrap nav .lnb_wrap .lnb li a{
+    background-color: yellow;
+}
+#wrap header .top_wrap nav .lnb_wrap .lnb li a span{
+    
+}
+#wrap header .top_wrap nav .lnb_wrap .intro{ /* lnb - intro */
+    background-color: yellowgreen;
+    
+}
+#wrap header .top_wrap nav .lnb_wrap .product{
+    background-color: lightcoral;
+}
+#wrap header .top_wrap nav .lnb_wrap .invest{
+    background-color: lightgreen;
+
+}
+#wrap header .top_wrap nav .lnb_wrap .esg {
+    background-color: lighy=royalblue;
+
+}
+#wrap header .top_wrap nav .lnb_wrap .hr {
+    background-color: lightseagreen
+
+}
+#wrap header .top_wrap nav .lnb_wrap .customer{
+    background-color: lightpink;
+
+}
 
 /* right_wrap (오른쪽 메뉴 - 검색, 언어변경, 전체메뉴)*/
 #wrap header .top_wrap nav .right_wrap{
