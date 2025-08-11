@@ -8,6 +8,7 @@ document.querySelectorAll('a').forEach(function(link) {
   });
 });
 
+//lnb//
 /*  lnb  */
   // 공통 LNB 토글
 // const lnbWrap = document.getElementById('.lnb_wrap');
