@@ -44,7 +44,7 @@ const logo = document.querySelector("header h1 a img");
 
 // 로고 경로
 const whiteLogo = "./images/logo/morrim_logo_white.png";
-const blackLogo = "./images/logo/morrim_logo_black.png";
+const blackLogo = "./images/logo/logo_color.png";
 
 // 오른쪽 메뉴 아이콘
 const searchIcon = document.querySelector(".search button img");
@@ -77,7 +77,6 @@ header.addEventListener("mouseenter", () => {
   searchInput.style.color = "#000";
   searchInput.style.fontWeight = "600";
   
-
   // 아이콘 교체
   searchIcon.src = blackSearch;
   menuIcon.src = blackMenu;
