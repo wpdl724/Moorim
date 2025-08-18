@@ -9,21 +9,20 @@ body{}
 } 
 
 #wrap header{
-    /* background-color: rgb(253, 253, 109); */
+    background-color: rgb(253, 253, 109);
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1000;
     width: 100%; 
-    padding: 0 88px;
     background-color: transparent;
-
 }
 #wrap header .top_wrap{/* 헤더 큰 묶음 */
     background-color: salmon;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 88px;
     height: 100px;
 }
 
@@ -70,61 +69,66 @@ body{}
     color: #fff;
 }
 
-/* lnb */
-#wrap header .top_wrap nav .lnb_wrap{/* lnb 큰묶음 */
-    background-color: orange;
-    display: none;
-    /* display: flex; */
-    flex-flow: row nowrap;
-    position:absolute;
-    z-index: 9999; /* 위로 올라오게하기 */
-    padding: 40px 200px;
-    top: 100px; left: 0; 
-    width: 100%;
-    /* width:calc(100%); height: 640px; */
+
+/*  ------------------------------  lnb 디자인 시작*/
+#wrap header .top_wrap nav .lnb_wrap {
+  display: none;
+  position: absolute;
+  top: 100px; /* header 아래 위치 */
+  left: 0;
+  width: 100%;
+  background: #fff;
+  padding: 0 200px;
+  z-index: 9999;
 }
 
+#wrap header .top_wrap nav .lnb_wrap.active {
+  display: flex;  /* 전체 lnb가 한번에 내려옴 */
+  flex-flow: row nowrap;
+}
 
-#wrap header .top_wrap nav .lnb_wrap .lnb{ /* lnb - ul */
-    width: 100%;
-    background-color: lightblue;
-    /* margin: 0 auto; */
+#wrap header .top_wrap nav .lnb_wrap .lnb{  /* 공톻 선택자 */
+    /* background-color: yellow; */
+    padding: 40px 0;
+    display: flex; 
+    flex-flow:column nowrap;
     text-align: center;
 }
-#wrap header .top_wrap nav .lnb_wrap .lnb li{
-    /* background-color: lightgrey; */
-    /* margin-bottom: 10px; */
-    padding: 20px;
+#wrap header .top_wrap nav .lnb_wrap .lnb li {
+    width: 100%;
+    margin-bottom: 15px;
+    margin-right: 155px;
+    
 }
-#wrap header .top_wrap nav .lnb_wrap .lnb li a{
-    background-color: yellow;
+#wrap header .top_wrap nav .lnb_wrap .lnb:hover {
+    background-color: #D9D9D9;
 }
 #wrap header .top_wrap nav .lnb_wrap .lnb li a span{
-    
+    font-weight: 500;
 }
-#wrap header .top_wrap nav .lnb_wrap .intro{ /* lnb - intro */
-    background-color: yellowgreen;
-    
+#wrap header .top_wrap nav .lnb_wrap .lnb li a {
+    font-size: 0.875em;
 }
-#wrap header .top_wrap nav .lnb_wrap .product{
-    background-color: lightcoral;
-}
-#wrap header .top_wrap nav .lnb_wrap .invest{
-    background-color: lightgreen;
 
+/* =======================================  lnb - 해당 분야 별 디자인 */
+#wrap header .top_wrap nav .lnb_wrap .intro { /* 기업소개 */
+} 
+#wrap header .top_wrap nav .lnb_wrap .product{ /* 제품소개 */
 }
-#wrap header .top_wrap nav .lnb_wrap .esg {
-    background-color: lighy=royalblue;
 
+#wrap header .top_wrap nav .lnb_wrap .invest {/* 투자정보 */
 }
-#wrap header .top_wrap nav .lnb_wrap .hr {
-    background-color: lightseagreen
+#wrap header .top_wrap nav .lnb_wrap .esg {/* 경영 */
+}
+#wrap header .top_wrap nav .lnb_wrap .pr {/* 홍보센터 */
+}
+#wrap header .top_wrap nav .lnb_wrap .hr {/* 인재채용 */
+}
+#wrap header .top_wrap nav .lnb_wrap .customer {/* 고객센터 */
+}
 
-}
-#wrap header .top_wrap nav .lnb_wrap .customer{
-    background-color: lightpink;
+/*  ------------------------------  lnb 디자인 끝 */
 
-}
 
 /* right_wrap (오른쪽 메뉴 - 검색, 언어변경, 전체메뉴)*/
 #wrap header .top_wrap nav .right_wrap{

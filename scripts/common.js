@@ -8,61 +8,35 @@ document.querySelectorAll('a').forEach(function(link) {
   });
 });
 
-//lnb//
-/*  lnb  */
-  // 공통 LNB 토글
-// const lnbWrap = document.getElementById('.lnb_wrap');
-// const allMenuBtn = document.getElementById('.all_menu_btn');
-// const gnbItems = document.querySelectorAll('.gnb li');
-// console.log();
-// // GNB 메뉴 클릭 시 LNB 보이기
-// gnbItems.forEach(item => {
-// item.addEventListener('click', () => {
-//     lnbWrap.classList.add('active');
-// });
-// });
 
-// // 전체메뉴 버튼 클릭 시 LNB 보이기
-// allMenuBtn.addEventListener('click', (e) => {
-// e.preventDefault();
-// lnbWrap.classList.toggle('active');
-// });
+document.addEventListener("DOMContentLoaded", function () {
+  const gnbItems = document.querySelectorAll(".gnb > li");   // GNB 메뉴
+  const lnbWrap = document.querySelector(".lnb_wrap");       // 전체 LNB 박스
+  const lnbLists = document.querySelectorAll(".lnb_wrap > ul"); // 개별 LNB
 
+  gnbItems.forEach((item, index) => {
+    item.addEventListener("mouseenter", () => {
+      // 전체 wrap 열기
+      lnbWrap.classList.add("active");
 
+      // 모든 LNB 닫기
+      lnbLists.forEach(list => list.classList.remove("active"));
 
-  /* lnb */
-// const gnbItems = document.querySelectorAll('.gnb li')
-// const lnbWrap = document.querySelector ('.lnb_wrap');
-// const allMenuBtn = document.querySelector('.all_menu_btn');
-// console.log(gnbItems,lnbWrap,allMenuBtn);
+      // 현재 GNB에 해당하는 LNB만 열기
+      if (lnbLists[index]) {
+        lnbLists[index].classList.add("active");
+      }
+    });
+  });
 
+  // nav 밖으로 나가면 닫힘
+  const nav = document.querySelector("nav");
+  nav.addEventListener("mouseleave", () => {
+    lnbWrap.classList.remove("active");
+    lnbLists.forEach(list => list.classList.remove("active"));
+  });
+});
 
-//   // 공통 함수: LNB 열기
-//   function openLnbWrap() {
-//     lnbWrap.classList.add('active');
-//   }
-
-//   // GNB 클릭 시 LNB 열기
-//   gnbItems.forEach(item => {
-//     item.addEventListener('click', (e) => {
-//       e.stopPropagation(); // 버블링 방지
-//       openLnbWrap();
-//     });
-//   });
-
-//   // 전체메뉴 버튼 클릭 시 LNB 열기
-//   allMenuBtn.addEventListener('click', (e) => {
-//     e.preventDefault();
-//     e.stopPropagation();
-//     openLnbWrap();
-//   });
-
-//   // 바깥 클릭 시 LNB 닫기
-//   document.addEventListener('click', (e) => {
-//     if (!lnbWrap.contains(e.target) && !allMenuBtn.contains(e.target)) {
-//       lnbWrap.classList.remove('active');
-//     }
-//   });
 
 
 /* footer - 패밀리사이트 */
