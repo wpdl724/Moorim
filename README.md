@@ -48,35 +48,3 @@
         }
     });
 });`
-
-
-
-
-
-document.addEventListener("DOMContentLoaded", function () {
-  const gnbItems = document.querySelectorAll(".gnb > li");   // 상단 GNB 메뉴
-  const lnbWrap = document.querySelector(".lnb_wrap");       // 전체 LNB 박스
-  const lnbLists = document.querySelectorAll(".lnb_wrap > ul"); // 개별 LNB 메뉴들
-
-  gnbItems.forEach((item, index) => {
-    item.addEventListener("mouseenter", () => {
-      // 모든 LNB 초기화
-      lnbLists.forEach(list => list.classList.remove("active"));
-
-      // LNB 전체 박스 열기
-      lnbWrap.classList.add("active");
-
-      // 해당 GNB에 맞는 LNB만 열기
-      if (lnbLists[index]) {
-        lnbLists[index].classList.add("active");
-      }
-    });
-  });
-
-  // nav 벗어나면 닫히기
-  const nav = document.querySelector("nav");
-  nav.addEventListener("mouseleave", () => {
-    lnbWrap.classList.remove("active");
-    lnbLists.forEach(list => list.classList.remove("active"));
-  });
-});

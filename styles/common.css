@@ -18,7 +18,7 @@ body{}
     background-color: transparent;
 }
 #wrap header .top_wrap{/* 헤더 큰 묶음 */
-    background-color: salmon;
+    /* background-color: salmon; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,11 +27,8 @@ body{}
 }
 
 /* 로고 */
-#wrap header .top_wrap h1{
-    /* background-color: coral;     */
-}
-#wrap header .top_wrap h1 a{
-}
+#wrap header .top_wrap h1 {}
+#wrap header .top_wrap h1 a{}
 #wrap header .top_wrap h1 a img{
     width: 150px;
 }
@@ -47,15 +44,12 @@ body{}
     /* background-color: skyblue; */
     width: 830px;
     margin: 0 auto;
-    
-    
 }
 #wrap header .top_wrap nav .gnb_wrap .gnb{/* gnb - ul */
     display: flex;
     flex-flow: row;
     width: 100%;
     justify-content: space-between;
-    
 }
 
 #wrap header .top_wrap nav .gnb_wrap .gnb li{
@@ -65,6 +59,7 @@ body{}
     text-align: center;
     line-height: 100px;
 }
+
 #wrap header .top_wrap nav .gnb_wrap .gnb li a{
     color: #fff;
 }
@@ -86,7 +81,6 @@ body{}
   display: flex;  /* 전체 lnb가 한번에 내려옴 */
   flex-flow: row nowrap;
 }
-
 #wrap header .top_wrap nav .lnb_wrap .lnb{  /* 공톻 선택자 */
     /* background-color: yellow; */
     padding: 40px 0;
@@ -98,11 +92,8 @@ body{}
     width: 100%;
     margin-bottom: 15px;
     margin-right: 155px;
-    
 }
-#wrap header .top_wrap nav .lnb_wrap .lnb:hover {
-    background-color: #D9D9D9;
-}
+#wrap header .top_wrap nav .lnb_wrap .lnb:hover {background-color: rgba(229, 229, 229, 0.4);}
 #wrap header .top_wrap nav .lnb_wrap .lnb li a span{
     font-weight: 500;
 }
@@ -110,22 +101,16 @@ body{}
     font-size: 0.875em;
 }
 
-/* =======================================  lnb - 해당 분야 별 디자인 */
+/* =======================================  lnb - 해당 영역 */
 #wrap header .top_wrap nav .lnb_wrap .intro { /* 기업소개 */
 } 
-#wrap header .top_wrap nav .lnb_wrap .product{ /* 제품소개 */
-}
+#wrap header .top_wrap nav .lnb_wrap .product{ /* 제품소개 */}
 
-#wrap header .top_wrap nav .lnb_wrap .invest {/* 투자정보 */
-}
-#wrap header .top_wrap nav .lnb_wrap .esg {/* 경영 */
-}
-#wrap header .top_wrap nav .lnb_wrap .pr {/* 홍보센터 */
-}
-#wrap header .top_wrap nav .lnb_wrap .hr {/* 인재채용 */
-}
-#wrap header .top_wrap nav .lnb_wrap .customer {/* 고객센터 */
-}
+#wrap header .top_wrap nav .lnb_wrap .invest {/* 투자정보 */}
+#wrap header .top_wrap nav .lnb_wrap .esg {/* 경영 */}
+#wrap header .top_wrap nav .lnb_wrap .pr {/* 홍보센터 */}
+#wrap header .top_wrap nav .lnb_wrap .hr {/* 인재채용 */}
+#wrap header .top_wrap nav .lnb_wrap .customer {/* 고객센터 */}
 
 /*  ------------------------------  lnb 디자인 끝 */
 
@@ -149,8 +134,8 @@ body{}
     width: 165px; 
     margin-top: 10px;
     color: #fff;
-    margin-left: 20px;
-    margin-right: 20px;
+    padding-left: 10px;
+    padding-right: 30px;
 }
 #wrap header .top_wrap nav .right_wrap .search button{
     /* background-color: pink; */
@@ -161,6 +146,7 @@ body{}
 }
 #wrap header .top_wrap nav .right_wrap .search button img{
     width: 20px; height: 20px;
+    
 }
 
 /* right_wrap (언어변경) */
