@@ -189,6 +189,45 @@ main section .product_wrap .contents .product_img a span {/* 이미지 위 글�
     display: flex; 
 
 }
+/* 2행 */
+.product_img {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 40px;
+}
+
+.product_img a {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px; /* 기본: 라운드 사각형 */
+  overflow: hidden;
+  position: relative;
+  transition: all 0.4s ease;
+  text-align: center;
+}
+
+.product_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product_img span {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: bold;
+  color: black;
+  transition: all 0.4s ease;
+}
+
+/* 원형 클래스 */
+.product_img a.circle {
+  border-radius: 50%;
+}
+
 /* ======================================================  2행 : product 끝 */
 
 /* ======================================================  3행 : promotion 시작 */
@@ -313,16 +352,13 @@ main section .ir_wrap .ir_gird_wrap .item1 ul li{}
 main section .ir_wrap .ir_gird_wrap .item1 ul li a {}
 main section .ir_wrap .ir_gird_wrap .item1 ul li a img{
 }
-main section .ir_wrap .ir_gird_wrap .item1 ul li a p{
+main section .ir_wrap .ir_gird_wrap .item1 ul li a p {
     position: absolute;
     left: 50px;
     top: 30px;
     bottom: 300px;
     color: #fff;
 }
-
-
-
 /* --------------------------------------------------------------- 2번째 그리드*/
 main section .ir_wrap .ir_gird_wrap .item2 {
 /* background-color: rebeccapurple; */
@@ -405,13 +441,37 @@ main section .ir_wrap .ir_gird_wrap .item5 ul li a p{
     bottom: 30px;
     color: #fff;
 }
-@keyframes ir_ani{
-    0% {transform: scale(1);}
-    100% {transform: scale(1.1);}
-}
+
 /* ======================================================  4행 : ir 끝 */
-/* 5행 */
-/* 6행 */
-/* 7행 */
+/* 5행 : 지속가능 경영 시작 */
+/* 5행 : 지속가능 경영 끝 */
+
+/* 6행 : copy_txt 시작 */
+main section .copy_txt {
+    background-color: yellow;
+    height: 460px;
+    text-align: center;
+    padding: 189px 505px;
+    background-image: url(../images/main/bg/copy.png);
+}
+main section .copy_txt h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: 500;
+    color: #fff;
+
+}
+main section .copy_txt p {
+    text-align: center;
+    font-size: 1.25em;
+    color: #fff;
+    font-weight: 200;
+
+}
+/* 6행 : copy_txt 끝 */
+
+/* 7행 : news 시작 */
+/* 7행 : news 끝 */
 
 
