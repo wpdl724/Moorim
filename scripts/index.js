@@ -12,7 +12,7 @@ var mySwiper = new Swiper('.swiper', { /* 1행 : bnr  */
     },
 })
 
-document.addEventListener("DOMContentLoaded", function () {
+  document.addEventListener("DOMContentLoaded", function () {
   const products = document.querySelectorAll(".product_img a");
 
   // 영어 → 한국어 매핑
@@ -28,9 +28,9 @@ document.addEventListener("DOMContentLoaded", function () {
     new_material: "NEW MATERIAL",
   };
 
-  // 처음 시작할 때: pulp만 원형 + 한글
+  // 처음 시작할 때: pulp만 원형 + 한글 + 그림자
   const pulpItem = document.getElementById("pulp");
-  pulpItem.classList.add("circle");
+  pulpItem.classList.add("circle", "shadow");
   pulpItem.querySelector("span").textContent = textMap["pulp"];
 
   // hover 이벤트
@@ -39,27 +39,27 @@ document.addEventListener("DOMContentLoaded", function () {
     const id = item.getAttribute("id");
 
     item.addEventListener("mouseenter", () => {
-      // 모든 아이템 초기화 (사각형 + 영어)
+      // 모든 아이템 초기화 (사각형 + 영어 + 그림자 제거)
       products.forEach((el) => {
-        el.classList.remove("circle");
+        el.classList.remove("circle", "shadow");
         const elId = el.getAttribute("id");
         el.querySelector("span").textContent = textMapEn[elId];
       });
 
-      // 현재 hover 된 아이템만 원형 + 한국어
-      item.classList.add("circle");
+      // 현재 hover 된 아이템만 원형 + 한국어 + 그림자
+      item.classList.add("circle", "shadow");
       span.textContent = textMap[id];
     });
 
     item.addEventListener("mouseleave", () => {
-      // 마우스 빠지면 다시 초기 상태 (펄프만 원형+한글)
+      // 마우스 빠지면 다시 초기 상태 (펄프만 원형+한글+그림자)
       products.forEach((el) => {
-        el.classList.remove("circle");
+        el.classList.remove("circle", "shadow");
         const elId = el.getAttribute("id");
         el.querySelector("span").textContent = textMapEn[elId];
       });
 
-      pulpItem.classList.add("circle");
+      pulpItem.classList.add("circle", "shadow");
       pulpItem.querySelector("span").textContent = textMap["pulp"];
     });
   });

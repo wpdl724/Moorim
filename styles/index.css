@@ -146,11 +146,12 @@ main section .wrap #bnr .bnr .slide3 {background-image: url(../images/main/bg/fi
 /* ======================================================  1행 : bnr 끝 */
 
 /* ======================================================  2행 : product 시작 */
+
 main section .product_wrap{
-    width: 100%;
-    height: 600px;
     /* background-color: palevioletred; */
-    padding: 74px 88px;
+    width: 100%;
+    height: 540px;
+    padding: 40px 310px;
 }
 
 main section .product_wrap .contents{
@@ -166,17 +167,16 @@ main section .product_wrap .contents h1{ /* 대제목 타이틀 */
 main section .product_wrap .contents p{/* 타이틀 내용 */
     margin-bottom: 80px;
     font-size: 1.25em;
-
 }
 
 main section .product_wrap .contents .product_img{/* 제품 이미지 큰 묶음 */
-    width: 100%;
-    background-color: yellow;
+    /* background-color: yellow; */
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
 }
-main section .product_wrap .contents .product_img a {
-}
+main section .product_wrap .contents .product_img a {}
+
 main section .product_wrap .contents .product_img a img {
     border-radius: 50px;
     position: relative;
@@ -185,21 +185,19 @@ main section .product_wrap .contents .product_img a span {/* 이미지 위 글�
     font-size: 1.25em;
     font-weight: 500;
     position: absolute;
-    /* bottom: 20px; */
     display: flex; 
-
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.4));
 }
 /* 2행 */
 .product_img {
   display: flex;
   justify-content: center;
-  gap: 50px;
   margin-top: 40px;
 }
 
 .product_img a {
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 300px;
   border-radius: 20px; /* 기본: 라운드 사각형 */
   overflow: hidden;
   position: relative;
@@ -215,19 +213,26 @@ main section .product_wrap .contents .product_img a span {/* 이미지 위 글�
 
 .product_img span {
   position: absolute;
-  bottom: 10px;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   font-weight: bold;
   color: black;
   transition: all 0.4s ease;
+
 }
 
-/* 원형 클래스 */
-.product_img a.circle {
+/* ------------- 토글 설정 */
+/*  원형 클래스 */
+main section .product_wrap .contents .product_img a.circle {
   border-radius: 50%;
+  width: 300px;
+  height: 300px;
 }
-
+/* 그림자 설정 */
+.shadow {
+  box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+}
 /* ======================================================  2행 : product 끝 */
 
 /* ======================================================  3행 : promotion 시작 */
