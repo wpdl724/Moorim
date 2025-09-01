@@ -3,7 +3,7 @@
 var mySwiper = new Swiper('.swiper', { /* 1행 : bnr  */
     slideperview:1,
     keyboard :{enabled:true,},
-    autoplay: {delay:6000,},
+    autoplay: {delay:5000,},
     loop: true,
     effect: 'fade', //부드러운 전환
     pagination: {

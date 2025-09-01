@@ -175,7 +175,15 @@ main section .product_wrap .contents .product_img{/* 제품 이미지 큰 묶음
     justify-content: space-between;
     margin: 0 auto;
 }
-main section .product_wrap .contents .product_img a {}
+main section .product_wrap .contents .product_img a {
+    width: 400px;
+  height: 300px;
+  border-radius: 20px; /* 기본: 라운드 사각형 */
+  overflow: hidden;
+  position: relative;
+  transition: all 0.4s ease;
+  text-align: center;
+}
 
 main section .product_wrap .contents .product_img a img {
     border-radius: 50px;
@@ -187,22 +195,16 @@ main section .product_wrap .contents .product_img a span {/* 이미지 위 글�
     position: absolute;
     display: flex; 
     filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.4));
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: black;
+    transition: all 0.4s ease;
 }
 /* 2행 */
-.product_img {
-  display: flex;
-  justify-content: center;
-  margin-top: 40px;
-}
 
 .product_img a {
-  width: 400px;
-  height: 300px;
-  border-radius: 20px; /* 기본: 라운드 사각형 */
-  overflow: hidden;
-  position: relative;
-  transition: all 0.4s ease;
-  text-align: center;
+  
 }
 
 .product_img img {
@@ -212,13 +214,7 @@ main section .product_wrap .contents .product_img a span {/* 이미지 위 글�
 }
 
 .product_img span {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-weight: bold;
-  color: black;
-  transition: all 0.4s ease;
+  
 
 }
 
