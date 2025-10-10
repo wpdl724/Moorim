@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     lnbWrap.classList.toggle("active"); // active 클래스 토글
   });
 });
+
 var mySwiper = new Swiper('.swiper', { /* 1행 : bnr  */
     slideperview:1,
     keyboard :{enabled:true,},
@@ -72,4 +73,13 @@ var mySwiper = new Swiper('.swiper', { /* 1행 : bnr  */
       pulpItem.querySelector("span").textContent = textMap["pulp"];
     });
   });
+});
+
+//6행 
+document.addEventListener("scroll", function () {
+  const copyTxt = document.querySelector(".copy_txt");
+  const scrollY = window.scrollY; // 현재 스크롤 값
+
+  // 배경 위치를 스크롤에 따라 천천히 이동 (속도 조절)
+  copyTxt.style.backgroundPositionY = `${scrollY * 0.4}px`;
 });

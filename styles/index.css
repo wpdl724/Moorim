@@ -449,11 +449,10 @@ main section .ir_wrap .ir_gird_wrap .item5 ul li a p{
 
 /* 6행 : copy_txt 시작 */
 main section .copy_txt {
-    background-color: yellow;
-    height: 460px;
+    /* height: 460px; */
     text-align: center;
     padding: 189px 505px;
-    background-image: url(../images/main/bg/copy.png);
+    background-image: url(../images/main/bg/moorim_copy.jpg);
 }
 main section .copy_txt h1 {
     text-align: center;
@@ -461,7 +460,6 @@ main section .copy_txt h1 {
     font-size: 2em;
     font-weight: 500;
     color: #fff;
-
 }
 main section .copy_txt p {
     text-align: center;
@@ -470,6 +468,7 @@ main section .copy_txt p {
     font-weight: 200;
 
 }
+
 /* 6행 : copy_txt 끝 */
 
 /* 7행 : news 시작 */
