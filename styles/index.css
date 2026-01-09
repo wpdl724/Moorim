@@ -447,7 +447,7 @@ main section .ir_wrap .ir_gird_wrap .item5 ul li a p{
 
 /* 5행 : 지속가능 경영 시작 */
 main section .management_wrap {
-    background-color: pink;
+    /* background-color: pink; */
     width: 100%;
     height: 1020px;
     margin: 0 auto;
@@ -456,7 +456,7 @@ main section .management_wrap {
     padding-top: 60px;
 }
 main section .management_wrap .content_management {
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
     
 }
 main section .management_wrap .content_management h1{
@@ -471,29 +471,87 @@ main section .management_wrap .content_management p{
     margin-bottom: 100px;
 }
 
-main section .management_wrap .management_container {
-    background-color: powderblue;
-    width: 100%; 
+
+/* ===== 5행 지속가능경영 추가 ===== */
+.management_container {
+    display: flex;
     height: 720px;
-    display: flex;  
-    gap: 10px;  
-}
-main section .management_wrap .management_container .management_contain {
-    background-color: orange;
+    gap: 10px;
 }
 
-/*5행 공통 디자인 */
-main section .management_wrap .management_container .management_contain .management_bg {
-    background-color: brown;
-}
-main section .management_wrap .management_container .management_contain .management_bg em {
-    font-size: 2rem;
-}
-main section .management_wrap .management_container .management_contain .management_bg span {
-
+.management_contain {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    transition: flex 0.6s ease;
+    cursor: pointer;
 }
 
+/* 기본 배경 */
+.management1 { background: url("../images/main/management/01_bg.jpg") center/cover no-repeat; }
+.management2 { background: url("../images/main/management/02_bg.jpg") center/cover no-repeat; }
+.management3 { background: url("../images/main/management/03_bg.jpg") center/cover no-repeat; }
+
+/* 오버레이 */
+.management_bg {
+    position: absolute;
+    inset: 0;
+    padding: 32px;
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0.1)
+    );
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* 타이틀 */
+.management_bg em {
+    color: #fff;
+    font-size: 1.625rem;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+/* 설명 텍스트 (기본 숨김) */
+.management_bg span {
+    color: #fff;
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.6;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: 0.4s ease;
+}
+
+/* 기본 active (첫 화면) */
+.management_contain.active {
+    /* 변경 */
+    flex: 4;
+}
+
+/* active일 때 텍스트 노출 */
+.management_contain.active span {
+    color: #fff;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* hover 시 효과 */
+.management_contain:hover {
+    flex: 4;
+}
+
+.management_contain:hover span {
+    opacity: 1;
+    transform: translateY(0);
+}
 /* 5행 : 지속가능 경영 끝 */
+
 
 /* 6행 : copy_txt 시작 */
 main section .copy_txt {

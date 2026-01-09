@@ -83,3 +83,15 @@ document.addEventListener("scroll", function () {
   // 배경 위치를 스크롤에 따라 천천히 이동 (속도 조절)
   copyTxt.style.backgroundPositionY = `${scrollY * 0.4}px`;
 });
+
+
+//5행 지속가능경영 
+// 5행 지속가능경영 hover 인터랙션
+const managementItems = document.querySelectorAll('.management_contain');
+
+managementItems.forEach(item => {
+    item.addEventListener('mouseenter', () => {
+        managementItems.forEach(el => el.classList.remove('active'));
+        item.classList.add('active');
+    });
+});
