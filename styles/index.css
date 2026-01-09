@@ -468,7 +468,7 @@ main section .management_wrap .content_management h1{
 main section .management_wrap .content_management p{
     text-align: center;
     font-size: 1.25em;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 
@@ -512,7 +512,7 @@ main section .management_wrap .content_management p{
 /* 타이틀 */
 .management_bg em {
     color: #fff;
-    font-size: 1.625rem;
+    font-size: 1.25rem;
     font-weight: 500;
     margin-bottom: 12px;
 }
@@ -520,7 +520,7 @@ main section .management_wrap .content_management p{
 /* 설명 텍스트 (기본 숨김) */
 .management_bg span {
     color: #fff;
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-weight: 300;
     line-height: 1.6;
     opacity: 0;
@@ -577,6 +577,7 @@ main section .copy_txt p {
 /* 6행 : copy_txt 끝 */
 
 /* 7행 : news 시작 */
+
 /* 7행 : news 끝 */
 
 
