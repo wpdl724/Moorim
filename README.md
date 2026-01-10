@@ -48,3 +48,39 @@
         }
     });
 });`
+
+
+
+* 슬라이드
+                    <div class="swiper-wrapper"> <!--news 슬라이드 시작-->
+                        <div class="swiper-slide slide1">
+                            <a href="#"><img src="./images/main/news/01_news.jpg" alt="뉴스 1번째 이미지 (2026 제지부분 1위 무림)"></a>
+                        </div>
+                        <div class="swiper-slide slide2">
+                            <a href="#"><img src="./images/main/news/02_news.jpg" alt="뉴스 2번째 이미지 (2026 제지부분 1위 무림)"></a>
+                        </div>
+                        <div class="swiper-slide slide3">
+                            <a href="#"><img src="./images/" alt="뉴스 3번째 이미지 (2026 제지부분 1위 무림)"></a>
+                        </div>
+                        <div class="swiper-slide slide4">
+                            <a href="#"><img src="./images/" alt="뉴스 4번째 이미지 (2026 제지부분 1위 무림)"></a>
+                        </div>
+                        <div class="swiper-slide slide5">
+                            <a href="#"><img src="./images/" alt="뉴스 5번째 이미지 (2026 제지부분 1위 무림)"></a>
+                        </div>
+                        <div class="swiper-slide slide6">
+                            <a href="#"><img src="./images/" alt="뉴스 6번째 이미지 (2026 제지부분 1위 무림)"></a>
+                        </div>
+                        <div class="swiper-slide slide7">
+                            <a href="#"><img src="./images/" alt="뉴스 7번째 이미지 (2026 제지부분 1위 무림)"></a>
+                        </div>
+                        <div class="swiper-slide slide8">
+                            <a href="#"><img src="./images/" alt="뉴스 8번째 이미지 (2026 제지부분 1위 무림)"></a>
+                        </div>
+                        <div class="swiper-slide slide9">
+                            <a href="#"><img src="./images/" alt="뉴스 9번째 이미지 (2026 제지부분 1위 무림)"></a>
+                        </div>
+                        <div class="swiper-slide slide10">
+                            <a href="#"><img src="./images/" alt="뉴스 10번째 이미지 (2026 제지부분 1위 무림)"></a>
+                        </div>
+                    </div>

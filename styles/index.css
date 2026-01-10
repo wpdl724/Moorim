@@ -577,6 +577,47 @@ main section .copy_txt p {
 /* 6행 : copy_txt 끝 */
 
 /* 7행 : news 시작 */
+main .news_wrap {
+    width: 100%;
+    height: 620px;
+    padding-top: 84px;
+    padding-left: 88px;
+    padding-right: 88px;
+}
+main .news_wrap .news{}
+main .news_wrap .news h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.125em;
+    font-weight: 500;
+}
+main .news_wrap .news p{
+    text-align: center;
+    font-size: 1.25em;
+    margin-bottom: 80px;
+}
+/* 스와이퍼 디자인 */
+main .swiper-wrapper {
+    
+}
+.swiper-container {
+    overflow: hidden;
+}
+.swiper-container .swiper-wrapper {
+}
+.swiper-container .swiper-wrapper .swiper-slide {
+    width: 300px;
+    height:300px
+}
+.swiper-container .swiper-wrapper .swiper-slide a {
+    display: block;
+}
+.swiper-container .swiper-wrapper .swiper-slide a img{
+    width: 100%;
+    display: block;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
 
 /* 7행 : news 끝 */
 

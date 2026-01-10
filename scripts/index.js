@@ -1,4 +1,13 @@
 /* 무림 메인페이지 JS */
+// a링크 막기
+document.querySelectorAll('a').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+  if (this.getAttribute('href') === '#' || this.getAttribute('href') === '') {
+          e.preventDefault();
+      }
+  });
+});
+
 // 메뉴바 클릭시 lnb 드롭다운
 document.addEventListener("DOMContentLoaded", function () {
   const allMenuBtn = document.querySelector(".all_menu_btn a"); // 전체메뉴 버튼
@@ -22,6 +31,7 @@ var mySwiper = new Swiper('.swiper', { /* 1행 : bnr  */
     },
 })
 
+1// 2행 product
   document.addEventListener("DOMContentLoaded", function () {
   const products = document.querySelectorAll(".product_img a");
 
@@ -80,7 +90,7 @@ document.addEventListener("scroll", function () {
   const copyTxt = document.querySelector(".copy_txt");
   const scrollY = window.scrollY; // 현재 스크롤 값
 
-  // 배경 위치를 스크롤에 따라 천천히 이동 (속도 조절)
+// 배경 위치를 스크롤에 따라 천천히 이동 (속도 조절)
   copyTxt.style.backgroundPositionY = `${scrollY * 0.4}px`;
 });
 
@@ -94,4 +104,20 @@ managementItems.forEach(item => {
         managementItems.forEach(el => el.classList.remove('active'));
         item.classList.add('active');
     });
+});
+
+
+// 7행 news 
+const newsSwiper = new Swiper(".swiper-container", {
+  loop: true,
+  slidesPerView: "auto",
+  spaceBetween: 10,
+  speed: 5000, // 흐르는 속도
+  autoplay: {
+    delay: 0, // 끊김 없는 무한 이동
+    disableOnInteraction: false,
+  },
+  
+  freemode : true,
+  freeModeMomentum: false,
 });
