@@ -563,13 +563,13 @@ main section .copy_txt {
 main section .copy_txt h1 {
     text-align: center;
     margin-bottom: 20px;
-    font-size: 2em;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #fff;
 }
 main section .copy_txt p {
     text-align: center;
-    font-size: 1.25em;
+    font-size: 1.125rem;
     color: #fff;
     font-weight: 200;
 
