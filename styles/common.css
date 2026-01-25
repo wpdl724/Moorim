@@ -244,32 +244,32 @@ footer .footer_bottom .footer_group a{/* footer 로고 */
 }
 footer .footer_bottom .footer_group a img{
     width: 130px; height: 40px;
+    margin-bottom: 20px;
 }
 
 footer .footer_bottom .footer_group address{/* 주소 */
 }
 footer .footer_bottom .footer_group address .address_wrap .address { /* 주소, 연락처 묶음 */
-    background-color: yellow;    
+    /* background-color: yellow;     */
     /* position: relative; */
 }
 footer .footer_bottom .footer_group address .address_wrap .address a span {/* 개인정보 */
-    background-color: brown;
     margin-top: 10px;
     margin-right: 10px;
 }
 
 footer .footer_bottom .footer_group address .address_wrap .contact {/* 연락처, 메일 , 패밀리사이트, sns*/
+    padding-top: 20px;
     display: flex;
     flex-flow: row nowrap;
 }
 footer .footer_bottom .footer_group address .address_wrap .contact a span{
     margin-right: 15px;
-    background-color: beige;
-    
 }
 
 footer .footer_bottom .footer_group address .address_wrap .contact .family_site{ /* 패밀리 사이트 */
     text-align: center;
+    position: relative; bottom: 8px;
 }
 footer .footer_bottom .footer_group address .address_wrap .contact .family_site a{/* 패밀리사이트 글자 */
     background-color: #fff;
@@ -280,7 +280,6 @@ footer .footer_bottom .footer_group address .address_wrap .contact .family_site 
     flex-flow: column;
     line-height: 30px;
     margin-right: 580px;
-
 }
 
 footer .footer_bottom .footer_group address .address_wrap .contact .family_site ul{}
@@ -293,7 +292,7 @@ footer .footer_bottom .footer_group address .address_wrap .contact .family_site 
 }
 
 footer .footer_bottom .footer_group address .sns_wrap{/* sns 묶음 */
-    background-color: blue;
+    /* background-color: blue; */
     width: 126px;
     text-align: center;
     display: flex; flex-flow: row;
