@@ -150,8 +150,9 @@ main section .wrap #bnr .bnr .slide3 {background-image: url(../images/main/bg/fi
 main section .product_wrap{
     /* background-color: palevioletred; */
     width: 100%;
-    height: 540px;
-    padding: 40px 310px;
+    /* height: 540px; */
+    height: 600px;
+    padding: 40px 200px;
 }
 
 main section .product_wrap .contents{
@@ -449,14 +450,11 @@ main section .ir_wrap .ir_gird_wrap .item5 ul li a p{
 main section .management_wrap {
     /* background-color: pink; */
     width: 100%;
-    height: 1020px;
+    height: 100%;
     margin: 0 auto;
-    padding-left: 88px;
-    padding-right: 88px;
-    padding-top: 60px;
+    padding: 88px 117px; /*값 수정*/
 }
 main section .management_wrap .content_management {
-    /* background-color: lightgreen; */
     
 }
 main section .management_wrap .content_management h1{
@@ -475,8 +473,10 @@ main section .management_wrap .content_management p{
 /* ===== 5행 지속가능경영 추가 ===== */
 .management_container {
     display: flex;
-    height: 720px;
+    height: 680px; /*720-600으로 수정 */
+    width: 100%;
     gap: 10px;
+    
 }
 
 .management_contain {
@@ -497,7 +497,7 @@ main section .management_wrap .content_management p{
 .management_bg {
     position: absolute;
     inset: 0;
-    padding: 300px 179px;
+    padding: 300px 160px;
     background: linear-gradient(
         to top,
         rgba(0,0,0,0.55),
@@ -523,7 +523,7 @@ main section .management_wrap .content_management p{
 /* 설명 텍스트 (기본 숨김) */
 .management_bg span {
     color: #fff;
-    font-size: 1rem;
+    /* font-size: 1rem; */
     font-weight: 300;
     line-height: 1.6;
     opacity: 0;
@@ -539,7 +539,7 @@ main section .management_wrap .content_management p{
 
 /* active일 때 텍스트 노출 */
 .management_contain.active em {
-    font-size: 2em;
+    font-size: 1.65em;
 }
 .management_contain.active span {
     color: #fff;
@@ -562,20 +562,22 @@ main section .management_wrap .content_management p{
 /* 6행 : copy_txt 시작 */
 main section .copy_txt {
     /* height: 460px; */
+    height: 580px;
     text-align: center;
-    padding: 189px 505px;
+    padding: 249px 500px;
     background-image: url(../images/main/bg/moorim_copy.jpg);
+    text-align: center;
 }
 main section .copy_txt h1 {
     text-align: center;
     margin-bottom: 20px;
-    font-size: 1.5rem;
+    font-size: 1.75em; /*1.5em-1.75로변경*/
     font-weight: 500;
     color: #fff;
 }
 main section .copy_txt p {
     text-align: center;
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     color: #fff;
     font-weight: 200;
 
