@@ -480,7 +480,7 @@ main section .management_wrap .content_management p{
 }
 
 .management_contain {
-    flex: 1;
+    flex: 2;
     position: relative;
     overflow: hidden;
     border-radius: 16px;
@@ -497,7 +497,7 @@ main section .management_wrap .content_management p{
 .management_bg {
     position: absolute;
     inset: 0;
-    padding: 32px;
+    padding: 300px 179px;
     background: linear-gradient(
         to top,
         rgba(0,0,0,0.55),
@@ -506,13 +506,16 @@ main section .management_wrap .content_management p{
     color: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
+    align-items: center;
+    text-align: center;
 }
 
 /* 타이틀 */
 .management_bg em {
     color: #fff;
-    font-size: 1.25rem;
+    /* font-size: 1.25rem; */
+    font-size: 1.25em;
     font-weight: 500;
     margin-bottom: 12px;
 }
@@ -535,6 +538,9 @@ main section .management_wrap .content_management p{
 }
 
 /* active일 때 텍스트 노출 */
+.management_contain.active em {
+    font-size: 2em;
+}
 .management_contain.active span {
     color: #fff;
     opacity: 1;
