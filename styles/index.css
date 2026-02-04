@@ -51,7 +51,7 @@ main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .bnr_txt h1 img{
     /* background-color: yellow; */
 }
 main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .bnr_txt h1 {
-    font-size: 2em;
+    font-size: 2.5em; /*폰트사이즈 변경 업데이트*/
     color: #fff;
     margin-bottom: 10px;
     line-height: 1.4;
