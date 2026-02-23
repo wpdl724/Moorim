@@ -9,7 +9,6 @@ body{}
 } 
 
 #wrap header{
-    /* background-color: rgb(253, 253, 109); */
     position: absolute;
     top: 0;
     left: 0;
@@ -261,6 +260,7 @@ footer .footer_bottom .footer_group address .address_wrap .address a span {/* �
 footer .footer_bottom .footer_group address .address_wrap .contact {/* 연락처, 메일 , 패밀리사이트, sns*/
     padding-top: 20px;
     display: flex;
+    align-items: center;
     flex-flow: row nowrap;
 }
 footer .footer_bottom .footer_group address .address_wrap .contact a span{
@@ -279,7 +279,6 @@ footer .footer_bottom .footer_group address .address_wrap .contact .family_site 
     display: flex;
     flex-flow: column;
     line-height: 30px;
-    margin-right: 580px;
 }
 
 footer .footer_bottom .footer_group address .address_wrap .contact .family_site ul{}
@@ -293,10 +292,8 @@ footer .footer_bottom .footer_group address .address_wrap .contact .family_site 
 
 footer .footer_bottom .footer_group address .sns_wrap{/* sns 묶음 */
     /* background-color: blue; */
-    width: 126px;
-    text-align: center;
-    display: flex; flex-flow: row;
-    justify-content: space-between;
+    margin-left: auto;
+    flex-shrink: 0;
     
 }
 footer .footer_bottom .footer_group address .sns_wrap a{}

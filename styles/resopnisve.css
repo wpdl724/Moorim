@@ -303,13 +303,94 @@
 
     main section .ir_wrap .ir_gird_wrap .item3 ul li a img {
         border-radius: 20px;
-        height: 550px;
+        height: 540px;
     }
+
     /* 4행 ir 끝 */
+
+    /* 5행  지속가능성 시작 */
+    main section .management_wrap {
+        /* background-color: pink; */
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        padding: 88px 50px;
+        /*값 수정*/
+    }
+
+    .management_container {
+        display: flex;
+        height: 680px;
+        /*720-600으로 수정 */
+        gap: 10px;
+    }
+
+    .management_contain {
+        flex: 2;
+        position: relative;
+        overflow: hidden;
+        border-radius: 16px;
+        transition: flex 0.6s ease;
+        cursor: pointer;
+    }
+
+    /* 타이틀 */
+    .management_bg em {
+        color: #fff;
+        /* color: red; */
+        /* font-size: 1.25rem; */
+        font-size: 1.25em;
+        font-weight: 500;
+        margin-bottom: 12px;
+    }
+
+    /* 설명 텍스트 (기본 숨김) */
+    .management_bg span {
+        color: #fff;
+        /* font-size: 1rem; */
+        font-weight: 300;
+        line-height: 1.6;
+        opacity: 0;
+        transform: translateY(10px);
+        transition: 0.4s ease;
+    }
+
+    /* 기본 active (첫 화면) */
+    .management_contain.active {
+        /* 변경 */
+
+    }
+
+    /* active일 때 텍스트 노출 */
+    .management_contain.active em {
+        font-size: 1.65em;
+    }
+
+    .management_contain.active span {
+        color: #fff;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* hover 시 효과 */
+    .management_contain:hover {
+        flex: 4;
+    }
+
+    .management_contain:hover span {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* 5행  지속가능성 끝*/
+
+    /* 6행 copy txt 시작 */
+    main section .copy_txt {
+        padding: 249px 200px;
+    }
+
+    /* 6행 copy txt 끝 */
 }
-
-
-
 
 /* --------------------------------------------- /*태블릿*/
 
