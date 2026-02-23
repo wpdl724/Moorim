@@ -212,6 +212,100 @@
 
     /* 3행. 유트브 영상  끝*/
 
+
+    /* 4행 ir 시작 */
+    /* ir 그리드 형식 */
+    main section .ir_wrap {
+        /* 4행 큰묶음 */
+        /* background-color: yellow; */
+
+    }
+
+    main section .ir_wrap .ir_gird_wrap {
+        /* background-color: rebeccapurple; */
+        display: grid;
+        grid-template-columns: repeat(3, 422px);
+        /*grid-auto-rows: 360px;  기본 높이는 가로형 기준 */
+        gap: 20px;
+        margin-top: 70px;
+        padding-bottom: 60px;
+        /* justify-content: center; */
+        /* 가운데 정렬 */
+    }
+
+    /* 그리드 공통 효과 */
+    /* 4행 ir 영역 이미지 hover 효과 */
+
+    .ir_gird_wrap img {
+        transition: transform 0.8s ease;
+        /* 부드럽게 */
+    }
+
+    .ir_gird_wrap a:hover img {
+        transform: scale(1.02);
+        /* 살짝 확대 */
+    }
+
+    .ir_gird_wrap ul li a {
+        display: block;
+        overflow: hidden;
+        /* 틀 유지 + 넘치는 부분 잘라내기 */
+        border-radius: 20px;
+    }
+
+    .ir_gird_wrap ul li a img {
+        transition: transform 0.5s ease;
+        /* 부드럽게 */
+        display: block;
+        width: 100%;
+    }
+
+    /* -------------------------------------------------------- 1번째 그리드 */
+    main section .ir_wrap .ir_gird_wrap .item1 {
+        /* background-color: red; */
+        /* position: relative; */
+    }
+
+    main section .ir_wrap .ir_gird_wrap .item1 ul {}
+
+    main section .ir_wrap .ir_gird_wrap .item1 ul li {}
+
+    main section .ir_wrap .ir_gird_wrap .item1 ul li a {}
+
+    main section .ir_wrap .ir_gird_wrap .item1 ul li a img {}
+
+    main section .ir_wrap .ir_gird_wrap .item1 ul li a p {
+        /*온라인공장투어*/
+        position: absolute;
+        left: 50px;
+        top: 40px;
+        /* bottom: 300px; */
+        color: #fff;
+    }
+
+    /* --------------------------------------------------------------- 2번째 그리드*/
+    main section .ir_wrap .ir_gird_wrap .item2 ul li a p {
+        position: absolute;
+        left: 50px;
+        top: 40px;
+        /* bottom: 300px; */
+        color: #fff;
+    }
+
+    /* --------------------------------------------------------------- 3번째 그리드 */
+    main section .ir_wrap .ir_gird_wrap .item3 {
+        /* background-color: pink; */
+        position: relative;
+        grid-row: span 2;
+        /* 세로로 두 줄 사용 */
+        /* height: 740px;     세로형 높이 고정 */
+    }
+
+    main section .ir_wrap .ir_gird_wrap .item3 ul li a img {
+        border-radius: 20px;
+        height: 550px;
+    }
+    /* 4행 ir 끝 */
 }
 
 
