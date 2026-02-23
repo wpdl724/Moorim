@@ -178,12 +178,12 @@ main section .product_wrap .contents .product_img{/* 제품 이미지 큰 묶음
 }
 main section .product_wrap .contents .product_img a {
     width: 400px;
-  height: 300px;
-  border-radius: 20px; /* 기본: 라운드 사각형 */
-  overflow: hidden;
-  position: relative;
-  transition: all 0.4s ease;
-  text-align: center;
+    height: 300px;
+    border-radius: 20px; /* 기본: 라운드 사각형 */
+    overflow: hidden;
+    position: relative;
+    transition: all 0.4s ease;
+    text-align: center;
 }
 
 main section .product_wrap .contents .product_img a img {

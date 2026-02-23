@@ -9,7 +9,7 @@ body{}
 } 
 
 #wrap header{
-    background-color: rgb(253, 253, 109);
+    /* background-color: rgb(253, 253, 109); */
     position: absolute;
     top: 0;
     left: 0;

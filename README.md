@@ -84,3 +84,36 @@
                             <a href="#"><img src="./images/" alt="뉴스 10번째 이미지 (2026 제지부분 1위 무림)"></a>
                         </div>
                     </div>
+
+
+@media screen and (max-width : 1399px) {/* 태블릿 */
+    header .top_wrap {
+        background-color: yellow;
+    }
+    header .top_wrap h1 a img {
+        background-color: brown;
+        width: 120px; 
+    }
+    header nav{
+        background-color: pink;
+        width: 944px; 
+        padding: 0 40px;
+    }
+    header nav .gnb_wrap{/* gnb 큰묶음 */
+        width: 548px;
+        background-color: mediumpurple;
+    }
+    header nav .gnb_wrap .gnb {}
+    header nav .gnb_wrap .gnb li {}
+
+    /*lnb */
+    header nav .lnb_wrap {/* lnb 큰묶음 */
+    }
+    header nav .lnb_wrap .intro { /* 1. lnb intro 기업소개 */
+
+    }
+    header nav .lnb_wrap .intro li {}
+    header nav .lnb_wrap .intro li a {}
+    header nav .lnb_wrap .intro li a span {}
+
+}/* 태블릿 반응형 끝 */
