@@ -113,20 +113,13 @@ header.addEventListener("mouseleave", () => {
   langSelect.style.color = "#fff";
 });
 
-/* footer - 패밀리사이트 */
-document.addEventListener("DOMContentLoaded", function() {
-  const toggle = document.querySelector('.fam-toggle');
-  const list = document.querySelector('.family_site_list');
-  console.log(toggle,list);
+// 메뉴바 클릭시 lnb 드롭다운
+document.addEventListener("DOMContentLoaded", function () {
+  const allMenuBtn = document.querySelector(".all_menu_btn a"); // 전체메뉴 버튼
+  const lnbWrap = document.querySelector(".lnb_wrap"); // LNB 전체 묶음
 
-  toggle.addEventListener('click', function () {
-    list.style.display = (list.style.display === 'block') ? 'none' : 'block';
-  });
-
-  /* 바깥쪽 영역 클릭시 닫힘 */
-  document.addEventListener('click', function (e){
-    if (!toggle.contains(e.target) && !list.contains(e.target)) {
-      list.style.display = 'none';
-    }
+  allMenuBtn.addEventListener("click", function (e) {
+    e.preventDefault(); // 링크 기본 동작 막기
+    lnbWrap.classList.toggle("active"); // active 클래스 토글
   });
 });
