@@ -1,57 +1,78 @@
 /* main.css*/
 /* 데스크탑 - 1250-1920 */
-body,html{
+body,
+html {
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* 가로 스크롤 제거 */
-    width: 100%;         /* 전체 너비 설정 */
-}
-/* ======================================================  1행 : bnr 시작 */
-main {}
-main section {}
-main section .wrap {/* 1행 큰묶음 */
-    max-width: 1920px; /* 또는 원하는 최대 폭 */
-    margin: 0 auto;
-    overflow: hidden;  /* 내부에서 넘치는 경우 방지 */
+    overflow-x: hidden;
+    /* 가로 스크롤 제거 */
+    width: 100%;
+    /* 전체 너비 설정 */
 }
 
-main section .wrap #bnr { /* 1행 슬라이드 시작 */
-    width: 100%; height: 936px;
-    
+/* ======================================================  1행 : bnr 시작 */
+main {}
+
+main section {}
+
+main section .wrap {
+    /* 1행 큰묶음 */
+    max-width: 1920px;
+    /* 또는 원하는 최대 폭 */
+    margin: 0 auto;
+    overflow: hidden;
+    /* 내부에서 넘치는 경우 방지 */
 }
-main section .wrap #bnr .bnr {/* 1행 : bnr 슬라이드 큰묶음 */
-    
+
+main section .wrap #bnr {
+    /* 1행 슬라이드 시작 */
+    width: 100%;
+    height: 936px;
+
 }
+
+main section .wrap #bnr .bnr {
+    /* 1행 : bnr 슬라이드 큰묶음 */
+
+}
+
 main section .wrap #bnr .bnr .slide1 {
     background-image: url(../images/main/bg/figma_bg_01.png);
-    
-} 
-main section .wrap #bnr .bnr .swiper-slide .bnr_wrap{
+
+}
+
+main section .wrap #bnr .bnr .swiper-slide .bnr_wrap {
     padding: 255px 214px;
-    display: flex; 
+    display: flex;
     flex-flow: row nowrap;
     margin: 0 auto;
     justify-content: space-between;
 }
 
 /* 1행 내용 */
-main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .bnr_txt{ /* 내용 */
+main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .bnr_txt {
+    /* 내용 */
     padding-top: 100px;
 }
+
 main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .bnr_txt p {
     font-size: 1.25em;
     margin-bottom: 10px;
     color: #fff;
 }
-main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .bnr_txt p:nth-child(5){
+
+main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .bnr_txt p:nth-child(5) {
     /* color: red;
     background-color: tan; */
 }
-main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .bnr_txt h1 img{
+
+main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .bnr_txt h1 img {
     /* background-color: yellow; */
 }
+
 main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .bnr_txt h1 {
-    font-size: 2.5em; /*폰트사이즈 변경 업데이트*/
+    font-size: 2.5em;
+    /*폰트사이즈 변경 업데이트*/
     color: #fff;
     margin-bottom: 10px;
     line-height: 1.4;
@@ -59,8 +80,11 @@ main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .bnr_txt h1 {
 
 /* -------------------- 1행 슬라이드 텍스트 애니메이션 효과 ==================== S */
 /* award 인증 이미지 */
-main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .award_img{padding-top: 100px;}
-main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .award_img img{}
+main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .award_img {
+    padding-top: 100px;
+}
+
+main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .award_img img {}
 
 /* 1행 : bnr 애니메이션 효과 설정 */
 @keyframes fadeUp {
@@ -68,6 +92,7 @@ main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .award_img img{}
         opacity: 0;
         transform: translateY(40px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -102,20 +127,28 @@ main section .wrap #bnr .bnr .swiper-slide .bnr_wrap .award_img img{}
     animation: fadeUp 1s ease forwards;
     animation-delay: 0.8s;
 }
+
 .swiper-slide-active .bnr_txt p:nth-of-type(4) {
     animation: fadeUp 1s ease forwards;
     animation-delay: 1s;
 }
+
 /* award 이미지 등장 애니메이션 */
 .swiper-slide-active .award_img img {
     animation: fadeUp 1s ease forwards;
     animation-delay: 1s;
 }
+
 /* -------------------- 1행 : bnr 애니메이션 효과 설정 ==================== E */
 
 
-main section .wrap #bnr .bnr .slide2 {background-image: url(../images/main/bg/figma_bg_02.png);}
-main section .wrap #bnr .bnr .slide3 {background-image: url(../images/main/bg/figma_bg_03.png);}
+main section .wrap #bnr .bnr .slide2 {
+    background-image: url(../images/main/bg/figma_bg_02.png);
+}
+
+main section .wrap #bnr .bnr .slide3 {
+    background-image: url(../images/main/bg/figma_bg_03.png);
+}
 
 /* -------------------- 1행 페이지네이션 모양 변경 */
 /* 페이지네이션 위치 */
@@ -143,11 +176,12 @@ main section .wrap #bnr .bnr .slide3 {background-image: url(../images/main/bg/fi
     background-color: white;
     opacity: 1;
 }
+
 /* ======================================================  1행 : bnr 끝 */
 
 /* ======================================================  2행 : product 시작 */
 
-main section .product_wrap{
+main section .product_wrap {
     /* background-color: palevioletred; */
     width: 100%;
     /* height: 540px; */
@@ -155,31 +189,41 @@ main section .product_wrap{
     padding: 40px 200px;
 }
 
-main section .product_wrap .contents{
+main section .product_wrap .contents {
     text-align: center;
 }
-main section .product_wrap .contents h1{ /* 대제목 타이틀 */
+
+main section .product_wrap .contents h1 {
+    /* 대제목 타이틀 */
     text-align: center;
     margin-bottom: 20px;
     font-size: 2.125em;
     font-weight: 500;
-    
-}
-main section .product_wrap .contents p{/* 타이틀 내용 */
-    margin-bottom: 80px;
-    font-size: 1.25em;
+    color: #1e1e1e;
+
+
 }
 
-main section .product_wrap .contents .product_img{/* 제품 이미지 큰 묶음 */
+main section .product_wrap .contents p {
+    /* 타이틀 내용 */
+    margin-bottom: 80px;
+    font-size: 1.25em;
+    color: #1e1e1e;
+}
+
+main section .product_wrap .contents .product_img {
+    /* 제품 이미지 큰 묶음 */
     /* background-color: yellow; */
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
 }
+
 main section .product_wrap .contents .product_img a {
     width: 400px;
     height: 300px;
-    border-radius: 20px; /* 기본: 라운드 사각형 */
+    border-radius: 20px;
+    /* 기본: 라운드 사각형 */
     overflow: hidden;
     position: relative;
     transition: all 0.4s ease;
@@ -190,89 +234,101 @@ main section .product_wrap .contents .product_img a img {
     border-radius: 50px;
     position: relative;
 }
-main section .product_wrap .contents .product_img a span {/* 이미지 위 글자 */
+
+main section .product_wrap .contents .product_img a span {
+    /* 이미지 위 글자 */
     font-size: 1.25em;
     font-weight: 500;
     position: absolute;
-    display: flex; 
+    display: flex;
     filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.4));
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    color: black;
+    color: #1e1e1e;
     transition: all 0.4s ease;
 }
+
 /* 2행 */
 
-.product_img a {
-  
-}
+.product_img a {}
 
 .product_img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.product_img span {
-  
-
-}
+.product_img span {}
 
 /* ------------- 토글 설정 */
 /*  원형 클래스 */
 main section .product_wrap .contents .product_img a.circle {
-  border-radius: 50%;
-  width: 300px;
-  height: 300px;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
 }
+
 /* 그림자 설정 */
 .shadow {
-  box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
+
 /* ======================================================  2행 : product 끝 */
 
 /* ======================================================  3행 : promotion 시작 */
-main section .promotion_wrap{/* 3행 큰묶음 */
-    background-color:#f5f5f5;
+main section .promotion_wrap {
+    /* 3행 큰묶음 */
+    background-color: #f5f5f5;
     padding: 160px 88px;
-    display: flex; 
+    display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    
+
 }
-main section .promotion_wrap .contents_wrap{ /* 3행 내용, a태그 묶음 */
+
+main section .promotion_wrap .contents_wrap {
+    /* 3행 내용, a태그 묶음 */
     margin-right: 100px;
 }
-main section .promotion_wrap .contents_wrap .contents{/* 타이틀 묶음 */
+
+main section .promotion_wrap .contents_wrap .contents {
+    /* 타이틀 묶음 */
     margin: left;
 
 }
-main section .promotion_wrap .contents_wrap .contents h1{
+
+main section .promotion_wrap .contents_wrap .contents h1 {
     margin-bottom: 20px;
     font-size: 2.125em;
     font-weight: 500;
-}
-main section .promotion_wrap .contents_wrap .contents p{
-    margin-bottom: 10px;
-    font-size: 1.125em;
+    color: #1e1e1e;
 
 }
-main section .promotion_wrap .contents_wrap .contents .promotion_btn{
+
+main section .promotion_wrap .contents_wrap .contents p {
+    margin-bottom: 10px;
+    font-size: 1.125em;
+    color: #1e1e1e;
+
+}
+
+main section .promotion_wrap .contents_wrap .contents .promotion_btn {
     margin-top: 60px;
-    width: 200px; height: 48px;
-    background-color: #000;
+    width: 200px;
+    height: 48px;
+    background-color: #2b2f33;
     border-radius: 15px;
 }
 
-main section .promotion_wrap .contents_wrap .contents .promotion_btn:hover { /* 3행 유튜브 버튼 효과 */
+main section .promotion_wrap .contents_wrap .contents .promotion_btn:hover {
+    /* 3행 유튜브 버튼 효과 */
     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.5);
 }
 
-main section .promotion_wrap .contents_wrap .contents .promotion_btn a{
-}
+main section .promotion_wrap .contents_wrap .contents .promotion_btn a {}
 
-main section .promotion_wrap .contents_wrap .contents .promotion_btn a p{
+main section .promotion_wrap .contents_wrap .contents .promotion_btn a p {
     /* background-color: rebeccapurple; */
     font-size: 1.25em;
     line-height: 48px;
@@ -280,101 +336,124 @@ main section .promotion_wrap .contents_wrap .contents .promotion_btn a p{
     color: #fff;
 }
 
-main section .promotion_wrap .promotion_video{/* 유투브 영상 주소코드 */}
-main section .promotion_wrap .promotion_video a iframe { /* 유투브 영상 */
+main section .promotion_wrap .promotion_video {
+    /* 유투브 영상 주소코드 */
+}
+
+main section .promotion_wrap .promotion_video a iframe {
+    /* 유투브 영상 */
     /* width: 820px; height: 440px; */
-    width: 924px; height: 512px;
+    width: 924px;
+    height: 512px;
     border-radius: 10px;
 }
+
 /* ======================================================  3행 : promotion 끝 */
 
 /* ======================================================  4행 : ir 시작 */
-main section .ir_wrap{/* 4행 큰묶음 */
+main section .ir_wrap {
+    /* 4행 큰묶음 */
     /* background-color: yellow; */
-    width: 100%; height: 100%;
+    width: 100%;
+    height: 100%;
     text-align: center;
 }
-main section .ir_wrap .contents{/* 타이틀 묶음 */
+
+main section .ir_wrap .contents {
+    /* 타이틀 묶음 */
     margin-top: 80px;
-    /* background-color: pink; */
-    /* padding-top: 146px; */
-    /* padding-left: 88px;
-    padding-right: 88px; */
 }
-main section .ir_wrap .contents h1{
+
+main section .ir_wrap .contents h1 {
     margin-bottom: 20px;
     font-size: 2.125em;
     font-weight: 500;
+    color: #1e1e1e;
 }
-main section .ir_wrap .contents p{
-    font-size: 1.25em;
 
+main section .ir_wrap .contents p {
+    font-size: 1.25em;
+    color: #1e1e1e;
 }
 
 /* ir 그리드 형식 */
 main section .ir_wrap .ir_gird_wrap {
-    /* background-color: rebeccapurple; */
     display: grid;
     grid-template-columns: repeat(3, 555px);
     /*grid-auto-rows: 360px;  기본 높이는 가로형 기준 */
     gap: 20px;
     margin-top: 70px;
     padding-bottom: 60px;
-    justify-content: center; /* 가운데 정렬 */
+    justify-content: center;
+    /* 가운데 정렬 */
 }
 
 /* 그리드 공통 효과 */
 /* 4행 ir 영역 이미지 hover 효과 */
 
 .ir_gird_wrap img {
-  transition: transform 0.8s ease; /* 부드럽게 */
+    transition: transform 0.8s ease;
+    /* 부드럽게 */
 }
 
 .ir_gird_wrap a:hover img {
-  transform: scale(1.02); /* 살짝 확대 */
+    transform: scale(1.02);
+    /* 살짝 확대 */
 }
+
 .ir_gird_wrap ul li a {
-  display: block;
-  overflow: hidden;  /* 틀 유지 + 넘치는 부분 잘라내기 */
-  border-radius: 20px; 
+    display: block;
+    overflow: hidden;
+    /* 틀 유지 + 넘치는 부분 잘라내기 */
+    border-radius: 20px;
 }
 
 .ir_gird_wrap ul li a img {
-  transition: transform 0.5s ease; /* 부드럽게 */
-  display: block;
-  width: 100%;
+    transition: transform 0.5s ease;
+    /* 부드럽게 */
+    display: block;
+    width: 100%;
 }
 
 /* -------------------------------------------------------- 1번째 그리드 */
 main section .ir_wrap .ir_gird_wrap .item1 {
-    /* background-color: red; */
     position: relative;
 }
+
 main section .ir_wrap .ir_gird_wrap .item1 ul {}
-main section .ir_wrap .ir_gird_wrap .item1 ul li{}
+
+main section .ir_wrap .ir_gird_wrap .item1 ul li {}
+
 main section .ir_wrap .ir_gird_wrap .item1 ul li a {}
-main section .ir_wrap .ir_gird_wrap .item1 ul li a img{}
-main section .ir_wrap .ir_gird_wrap .item1 ul li a p { /*온라인공장투어*/
+
+main section .ir_wrap .ir_gird_wrap .item1 ul li a img {}
+
+main section .ir_wrap .ir_gird_wrap .item1 ul li a p {
+    /*온라인공장투어*/
     position: absolute;
     left: 50px;
     top: 40px;
-    /* bottom: 300px; */
     color: #fff;
 }
+
 /* --------------------------------------------------------------- 2번째 그리드*/
 main section .ir_wrap .ir_gird_wrap .item2 {
-position: relative;
+    position: relative;
 
 }
+
 main section .ir_wrap .ir_gird_wrap .item2 ul {}
-main section .ir_wrap .ir_gird_wrap .item2 ul li{}
-main section .ir_wrap .ir_gird_wrap .item2 ul li a{}
-main section .ir_wrap .ir_gird_wrap .item2 ul li a img{}
-main section .ir_wrap .ir_gird_wrap .item2 ul li a p{
+
+main section .ir_wrap .ir_gird_wrap .item2 ul li {}
+
+main section .ir_wrap .ir_gird_wrap .item2 ul li a {}
+
+main section .ir_wrap .ir_gird_wrap .item2 ul li a img {}
+
+main section .ir_wrap .ir_gird_wrap .item2 ul li a p {
     position: absolute;
     left: 50px;
     top: 40px;
-    /* bottom: 300px; */
     color: #fff;
 }
 
@@ -382,25 +461,31 @@ main section .ir_wrap .ir_gird_wrap .item2 ul li a p{
 main section .ir_wrap .ir_gird_wrap .item3 {
     /* background-color: pink; */
     position: relative;
-    grid-row: span 2; /* 세로로 두 줄 사용 */
+    grid-row: span 2;
+    /* 세로로 두 줄 사용 */
     /* height: 740px;     세로형 높이 고정 */
 }
-main section .ir_wrap .ir_gird_wrap .item3 ul {    
-}
-main section .ir_wrap .ir_gird_wrap .item3 ul li{}
-main section .ir_wrap .ir_gird_wrap .item3 ul li a{}
-main section .ir_wrap .ir_gird_wrap .item3 ul li a img{    
+
+main section .ir_wrap .ir_gird_wrap .item3 ul {}
+
+main section .ir_wrap .ir_gird_wrap .item3 ul li {}
+
+main section .ir_wrap .ir_gird_wrap .item3 ul li a {}
+
+main section .ir_wrap .ir_gird_wrap .item3 ul li a img {
     border-radius: 20px;
     height: 700px;
 }
-main section .ir_wrap .ir_gird_wrap .item3 ul li a p{
+
+main section .ir_wrap .ir_gird_wrap .item3 ul li a p {
     position: absolute;
     left: 50px;
     top: 40px;
     /* bottom: 300px; */
     color: #fff;
 }
-main section .ir_wrap .ir_gird_wrap .item3 ul li a span{
+
+main section .ir_wrap .ir_gird_wrap .item3 ul li a span {
     border-top: 2px solid #fff;
     /* width: 340px; */
     padding: 20px 0;
@@ -412,23 +497,27 @@ main section .ir_wrap .ir_gird_wrap .item3 ul li a span{
     line-height: 1.4;
     text-align: left;
 }
+
 /* --------------------------------------------------------------- 4번째 그리드 */
 main section .ir_wrap .ir_gird_wrap .item4 {
-/* background-color: lightgray; */
-position: relative;
-}
-main section .ir_wrap .ir_gird_wrap .item4 ul {
+    /* background-color: lightgray; */
+    position: relative;
 }
 
-main section .ir_wrap .ir_gird_wrap .item4 ul li{}
-main section .ir_wrap .ir_gird_wrap .item4 ul li a{}
-main section .ir_wrap .ir_gird_wrap .item4 ul li a img{}
-main section .ir_wrap .ir_gird_wrap .item4 ul li a p{
+main section .ir_wrap .ir_gird_wrap .item4 ul {}
+
+main section .ir_wrap .ir_gird_wrap .item4 ul li {}
+
+main section .ir_wrap .ir_gird_wrap .item4 ul li a {}
+
+main section .ir_wrap .ir_gird_wrap .item4 ul li a img {}
+
+main section .ir_wrap .ir_gird_wrap .item4 ul li a p {
     position: absolute;
     left: 50px;
     bottom: 40px;
     color: #fff;
-}    
+}
 
 /* --------------------------------------------------------------- 5번째 그리드 */
 main section .ir_wrap .ir_gird_wrap .item5 {
@@ -436,11 +525,16 @@ main section .ir_wrap .ir_gird_wrap .item5 {
     position: relative;
 
 }
+
 main section .ir_wrap .ir_gird_wrap .item5 ul {}
-main section .ir_wrap .ir_gird_wrap .item5 ul li{}
-main section .ir_wrap .ir_gird_wrap .item5 ul li a{}
-main section .ir_wrap .ir_gird_wrap .item5 ul li a img{}
-main section .ir_wrap .ir_gird_wrap .item5 ul li a p{
+
+main section .ir_wrap .ir_gird_wrap .item5 ul li {}
+
+main section .ir_wrap .ir_gird_wrap .item5 ul li a {}
+
+main section .ir_wrap .ir_gird_wrap .item5 ul li a img {}
+
+main section .ir_wrap .ir_gird_wrap .item5 ul li a p {
     position: absolute;
     left: 50px;
     bottom: 40px;
@@ -451,35 +545,39 @@ main section .ir_wrap .ir_gird_wrap .item5 ul li a p{
 
 /* 5행 : 지속가능 경영 시작 */
 main section .management_wrap {
-    /* background-color: pink; */
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    padding: 88px 117px; /*값 수정*/
+    padding: 88px 117px;
+    /*값 수정*/
 }
-main section .management_wrap .content_management {
-    
-}
-main section .management_wrap .content_management h1{
+
+main section .management_wrap .content_management {}
+
+main section .management_wrap .content_management h1 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 2.125em;
     font-weight: 500;
+    color: #1e1e1e;
 }
-main section .management_wrap .content_management p{
+
+main section .management_wrap .content_management p {
     text-align: center;
     font-size: 1.25em;
     margin-bottom: 80px;
+    color: #1e1e1e;
 }
 
 
 /* ===== 5행 지속가능경영 추가 ===== */
 .management_container {
     display: flex;
-    height: 680px; /*720-600으로 수정 */
+    height: 680px;
+    /*720-600으로 수정 */
     width: 100%;
     gap: 10px;
-    
+
 }
 
 .management_contain {
@@ -492,20 +590,26 @@ main section .management_wrap .content_management p{
 }
 
 /* 기본 배경 */
-.management1 { background: url("../images/main/management/01_bg.jpg") center/cover no-repeat; }
-.management2 { background: url("../images/main/management/02_bg.jpg") center/cover no-repeat; }
-.management3 { background: url("../images/main/management/03_bg.jpg") center/cover no-repeat; }
+.management1 {
+    background: url("../images/main/management/01_bg.jpg") center/cover no-repeat;
+}
+
+.management2 {
+    background: url("../images/main/management/02_bg.jpg") center/cover no-repeat;
+}
+
+.management3 {
+    background: url("../images/main/management/03_bg.jpg") center/cover no-repeat;
+}
 
 /* 오버레이 */
 .management_bg {
     position: absolute;
     inset: 0;
     padding: 300px 160px;
-    background: linear-gradient(
-        to top,
-        rgba(0,0,0,0.55),
-        rgba(0,0,0,0.1)
-    );
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.1));
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -544,6 +648,7 @@ main section .management_wrap .content_management p{
 .management_contain.active em {
     font-size: 1.65em;
 }
+
 .management_contain.active span {
     color: #fff;
     opacity: 1;
@@ -559,6 +664,7 @@ main section .management_wrap .content_management p{
     opacity: 1;
     transform: translateY(0);
 }
+
 /* 5행 : 지속가능 경영 끝 */
 
 
@@ -571,13 +677,16 @@ main section .copy_txt {
     background-image: url(../images/main/bg/moorim_copy.jpg);
     text-align: center;
 }
+
 main section .copy_txt h1 {
     text-align: center;
     margin-bottom: 20px;
-    font-size: 1.75em; /*1.5em-1.75로변경*/
+    font-size: 1.75em;
+    /*1.5em-1.75로변경*/
     font-weight: 500;
     color: #fff;
 }
+
 main section .copy_txt p {
     text-align: center;
     font-size: 1.25rem;
@@ -585,6 +694,7 @@ main section .copy_txt p {
     font-weight: 200;
 
 }
+
 /* 6행 : copy_txt 끝 */
 
 /* 7행 : news 시작 */
@@ -595,35 +705,43 @@ main .news_wrap {
     padding-left: 88px;
     padding-right: 88px;
 }
-main .news_wrap .news{}
-main .news_wrap .news h1{
+
+main .news_wrap .news {}
+
+main .news_wrap .news h1 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 2.125em;
     font-weight: 500;
+    color: #1e1e1e;
 }
-main .news_wrap .news p{
+
+main .news_wrap .news p {
     text-align: center;
     font-size: 1.25em;
     margin-bottom: 80px;
+    color: #1e1e1e;
 }
+
 /* 스와이퍼 디자인 */
-main .swiper-wrapper {
-    
-}
+main .swiper-wrapper {}
+
 .swiper-container {
     overflow: hidden;
 }
-.swiper-container .swiper-wrapper {
-}
+
+.swiper-container .swiper-wrapper {}
+
 .swiper-container .swiper-wrapper .swiper-slide {
     width: 300px;
-    height:300px
+    height: 300px
 }
+
 .swiper-container .swiper-wrapper .swiper-slide a {
     display: block;
 }
-.swiper-container .swiper-wrapper .swiper-slide a img{
+
+.swiper-container .swiper-wrapper .swiper-slide a img {
     width: 100%;
     display: block;
     border-top-left-radius: 10px;
@@ -631,5 +749,3 @@ main .swiper-wrapper {
 }
 
 /* 7행 : news 끝 */
-
-
